@@ -27,5 +27,5 @@ console.log(num1);
         console.log(abc);
 
 
-        let const=10;
-        console.log(const);
+        // let const=10;
+        // console.log(const);
