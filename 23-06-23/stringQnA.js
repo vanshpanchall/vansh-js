@@ -198,6 +198,79 @@
 // console.log(sentence.slice(4, 10));
 
 // 51
- const text = "Hello, World!";
- console.log(text.indexOf("o", 5));
+// const text = "Hello, World!";
+// console.log(text.indexOf("o", 5));
 
+//52
+// const sentence = "JavaScript is fun!";
+// console.log(sentence.startsWith("Java"));
+
+// 53
+// const str = "Hello, World!";
+// console.log(str.endsWith("!"));
+
+// 54
+// const sentence = "JavaScript is amazing!";
+// console.log(sentence.lastIndexOf("a", 12));
+
+// 55
+// const text = "Hello, World!";
+// console.log(text.substring(7, 2));
+
+// 56
+// const sentence = "JavaScript is cool!";
+// console.log(sentence.concat(" I love it!"));
+
+// 57
+// const str = "Hello, World!";
+// console.log(str.toUpperCase().charAt(7));
+
+// 58
+// const str = "Hello, World!";
+// console.log(str.toLowerCase().charAt(7));
+
+// 59
+// const sentence = "JavaScript is amazing!";
+// console.log(sentence.replace("amazing", "awesome").toUpperCase());
+
+// 60
+// function is_string(input) {
+//   return typeof input === "string";
+// }
+// console.log(is_string("w3resource"));
+// console.log(is_string([1, 2, 4, 0]));
+
+// 61
+// function is_Blank(str) {
+//   return str.trim().length === 0;
+// }
+// console.log(is_Blank("  "));
+// console.log(is_Blank("abc"));
+
+// 62
+// function string_to_array(str) {
+//   return str.split(" ");
+// }
+// console.log(string_to_array("Robin Singh"));
+
+// 63;
+// function truncate_string(str, chars) {
+//   return str.substring(0, chars);
+// }
+// console.log(truncate_string("Robin Singh", 4));
+
+// 64
+// function protect_email(email) {
+//   var atIndex = email.indexOf("@");
+//   if (atIndex > 0) {
+//     var firstPart = email.substring(0, atIndex);
+//     var hiddenPart = ".".repeat(Math.max(0, firstPart.length - 8));
+//     var lastPart = email.substring(atIndex);
+//     return firstPart.substring(0, 5) + hiddenPart + lastPart;
+//   } else {
+//     return email;
+//   }
+// }
+// console.log(protect_email("robin_singh@example.com"));
+
+// 65
