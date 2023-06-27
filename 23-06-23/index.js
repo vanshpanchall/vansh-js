@@ -95,6 +95,32 @@ console.log(smtg.replaceAll("!", "."));
 //search
 console.log(smtg.search("Vansh"));
 
+//slice
+console.log(smtg.slice(-6, -1));
+
+//split
+console.log(smtg.split("there!"));
+
+//substring
+console.log(smtg.substring(24, 30));
+
+//toUpperCase
+console.log(smtg.toLowerCase());
+console.log(smtg.slice(-6, -1).toLowerCase());
+
+//toLowerCase
+console.log(smtg.toUpperCase());
+console.log(smtg.slice(-6, -1).toUpperCase());
+
+let whitespace = "     Hii!     ";
+console.log(whitespace);
+//trim
+console.log(whitespace.trim());
+
+// trimEnd, trimStart
+console.log(whitespace.trimEnd());
+console.log(whitespace.trimStart());
+
 // object inside the function
 // function greet() {
 //   let obj1 = {

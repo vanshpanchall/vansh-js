@@ -134,12 +134,19 @@
 // console.log(a);
 
 // 20
-function operationObj(obj) {
-  obj.z = { ...obj, c: 12 };
-}
-let a = {
-  x: 34,
-  y: 56,
-};
-operationObj(a);
-console.log(a);
+// function operationObj(obj) {
+//   obj.z = { ...obj, c: 12 };
+// }
+// let a = {
+//   x: 34,
+//   y: 56,
+// };
+// operationObj(a);
+// console.log(a);
+
+// 21
+const target = { a: { b: { c: 1 } } };
+const source = { a: { b: { d: 2 } } };
+const result = Object.assign(target, source);
+result.a.b.d = 3;
+console.log(source);
