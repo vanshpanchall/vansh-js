@@ -107,16 +107,17 @@ function printEvenNumbers(num1, num2) {
 printEvenNumbers(1, 10);
 
 // 10
-const names = [
-  { first_name: "Asndnm", last_name: "L demo" },
-  { first_name: "Qpweui", last_name: "Alxezx" },
-  { first_name: "Pqwern", last_name: "Ruse" },
-  { first_name: "Wiruyn", last_name: "Ruby" },
-  { first_name: "Erpso", last_name: "Loal" },
-  { first_name: "Demors", last_name: "Poet" },
-  { first_name: "Aleos", last_name: "Lkeu" },
-];
-for (i = 0; i <= names.length; i++){
-  
-}
+
+
+// const names = [
+//   { first_name: "Asndnm", last_name: "L demo" },
+//   { first_name: "Qpweui", last_name: "Alxezx" },
+//   { first_name: "Pqwern", last_name: "Ruse" },
+//   { first_name: "Wiruyn", last_name: "Ruby" },
+//   { first_name: "Erpso", last_name: "Loal" },
+//   { first_name: "Demors", last_name: "Poet" },
+//   { first_name: "Aleos", last_name: "Lkeu" },
+// ];
+// for (i = 0; i <= names.length; i++){
+// }
 // console.log(names[1]);

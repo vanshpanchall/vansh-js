@@ -44,10 +44,14 @@ let moreToons = ["Nobita", "Chhota Bheem"];
 // forEach()
 
 // map()
-// let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // let arr2 = arr1.map((a) => a * 2);
 // let arr2 = arr1.map((a) => a * 2 + 2 - 2 / 2);
-// console.log(arr2);
+function triple(x) {
+  return x * 3;
+}
+let arr2=arr1.map(triple)
+console.log(arr2);
 
 // filter()
 // let num = [21, 4, 2, 43, 12, 11, 1, 4, 8, 54, 7, 63];
@@ -115,7 +119,7 @@ let toons = ["Doraemon", "Tom", "Jerry", "Mickey Mouse"];
 // console.log(toons);
 
 // find()
-let num = [20, 30, 56, 89, 51];
+// let num = [20, 30, 56, 89, 51];
 // let num1 = num.find((a) => a > 50);
 // console.log(num1);
 
@@ -143,3 +147,40 @@ let num = [20, 30, 56, 89, 51];
 // console.log(num.at(-1));
 
 // some()
+// let num = [2, 74, 2, 15, 4, 41, 4, 56];
+// let num1 = (abc) => abc > 100;
+// console.log(num.some(num1));
+
+let num = [2, 74, 2, 15, 4, 41, 4, 56];
+// let num1 = (abc) => abc < 10;
+// let num1 = (abc) => abc % 2 == 0;
+// console.log(num.some(num1));
+
+// every()
+// let num1 = (abc) => abc < 10;
+// console.log(num.every(num1));
+
+// let num1 = (abc) => abc < 100;
+// console.log(num.every(num1));
+
+// fill()
+// console.log(toons.fill("Motu Patlu"));
+// console.log(toons.fill("Motu Patlu", 3));
+// console.log(toons.fill("Motu Patlu", 1, 3));
+
+// isArray()
+// let abc = "hi";
+// console.log(Array.isArray(abc));
+// console.log(Array.isArray(toons));
+
+// flat()
+// let arr = ["Hi", ["Hello!", ["How", ["are", ["you?", ["I'm", ["Fine"]]]]]]];
+// console.log(arr.flat(4));
+// console.log(arr.flat(Infinity));
+
+// slice()
+// console.log(toons.slice(0, 2));
+// console.log(toons.slice(-5, -2));
+// console.log(num.slice(-3, -5));      //empty array (in negative, first value should be bigger)
+// console.log(toons.slice(0, 2));
+// console.log(num.slice(7, 3));      //empty array (in +ve, first value should be smaller)
