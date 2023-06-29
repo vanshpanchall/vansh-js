@@ -29,34 +29,48 @@
 // }
 
 // 3
-// let pattern = "";
 // for (let i = 0; i <= 4; i++) {
+//   let pattern = "";
 //   for (let j = 0; j < 5; j++) {
 //     pattern += "* ";
 //   }
-//   pattern += "\n";
+//   // pattern += "\n";
+//   console.log(pattern);
 // }
-// console.log(pattern);
 
 // 4
-// let pattern = "";
-// for (let i = 0; i <= 5; i++) {
-//   for (let j = 0; j < i; j++) {
+// for (let i = 1; i <= 5; i++) {
+//   let pattern = "";
+//   for (let j = 1; j <= i; j++) {
 //     pattern += "* ";
 //   }
-//   pattern += "\n";
+//   console.log(pattern);
 // }
-// console.log(pattern);
+// pattern += "\n";
 
 // 5
-// let pattern = "";
-// for (let i = 5; i >= 0; i--) {
+// for (let i = 5; i > 0; i--) {
+//   let pattern = "";
 //   for (let j = i; j > 0; j--) {
 //     pattern += "* ";
 //   }
-//   pattern += "\n";
+//   console.log(pattern);
 // }
-// console.log(pattern);
+// pattern += "\n";
+
+// for (i = 1; i < 6; i++){
+//   if (i == 2) {
+//     break;
+//   }
+//   console.log(i)
+// }
+
+for (i = 1; i < 6; i++) {
+  if (i == 2) {
+    continue;
+  }
+  console.log(i);
+}
 
 // 6
 // function getNumberOfDays(num) {
@@ -97,17 +111,16 @@
 // printOddNumbers(1, 10);
 
 // 9
-function printEvenNumbers(num1, num2) {
-  for (let i = num1; i <= num2; i++) {
-    if (i % 2 == 0) {
-      console.log(i);
-    }
-  }
-}
-printEvenNumbers(1, 10);
+// function printEvenNumbers(num1, num2) {
+//   for (let i = num1; i <= num2; i++) {
+//     if (i % 2 == 0) {
+//       console.log(i);
+//     }
+//   }
+// }
+// printEvenNumbers(1, 10);
 
 // 10
-
 
 // const names = [
 //   { first_name: "Asndnm", last_name: "L demo" },
