@@ -145,8 +145,105 @@
 // console.log(a);
 
 // 21
-const target = { a: { b: { c: 1 } } };
-const source = { a: { b: { d: 2 } } };
-const result = Object.assign(target, source);
-result.a.b.d = 3;
-console.log(source);
+// const target = { a: { b: { c: 1 } } };
+// const source = { a: { b: { d: 2 } } };
+// const result = Object.assign(target, source);
+// result.a.b.d = 3;
+// console.log(source);
+// console.log(result);
+
+// 22
+
+// chatGPT
+// function customAssign(target, source) {
+//   const merged = {};
+
+//   // Copy properties from target object
+//   for (let key in target) {
+//     if (target.hasOwnProperty(key)) {
+//       merged[key] = target[key];
+//     }
+//   }
+
+//   // Copy properties from source object
+//   for (let key in source) {
+//     if (source.hasOwnProperty(key)) {
+//       merged[key] = source[key];
+//     }
+//   }
+
+//   return merged;
+// }
+
+// const target = { a: 1, b: 2 };
+// const source = { b: 3, c: 4 };
+
+// const result = customAssign(target, source);
+// console.log(result);
+
+// 23
+
+// a
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = arr1;
+// arr2[0].c = 5;
+// // obj1.c = 5;
+// console.log(arr1);
+// console.log(arr2);
+// console.log(obj1); // arr1 and arr2 will change, abj1 won't
+
+// b
+// let obj1 = { a: 23, b: 45, c: { f: 990 } };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = arr1;
+// arr2[0].c = 5;
+// // obj1.c.f = 30;
+// console.log(obj1);
+// console.log(arr1);
+// console.log(arr2);
+
+// c
+// let obj1 = { a: 23, b: 45, c: { f: 990 } };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = arr1;
+// obj1.c.f = 30;
+// console.log(arr1);
+
+// d
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = Object.assign([], [{ ...obj1 }]);
+// let arr2 = arr1;
+// arr2[0].c = 5;
+// obj1.a = 20;
+// console.log(arr1);
+// console.log(arr2);
+// console.log(obj1);
+
+// e
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = Object.assign([], arr1);
+// arr2[0].c = 5;
+// obj1.a = 15;
+// console.log(arr1);
+// console.log(arr2);
+// console.log(obj1);
+
+// f
+// let obj1 = { a: 23, b: 45 };
+// let arr1 = [{ ...obj1 }];
+// let arr2 = Object.assign([], [{ ...arr1[0] }]);
+// arr2[0].c = 5;
+// // arr1[0].c = 5;
+// obj1.a = 20;
+// console.log(arr1);
+// console.log(arr2);
+// console.log(obj1);
+
+// g
+// let obj1 = { a: 34, b: 56, c: { h: 77, j: 90 } };
+// let obj2 = Object.assign({}, obj1);
+// let obj3 = Object.assign({ ...obj2 }, { c: { k: 44 } });
+// obj2.c.h = 67;
+// console.log(obj1, obj2, obj3);

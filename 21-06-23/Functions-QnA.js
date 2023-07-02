@@ -276,14 +276,19 @@
 // };
 // calculateMultiply();
 
-14
-function greet(hi) {
-  if (hi == undefined) {
-    console.log("Anonymous");
-  } else {
-    console.log("Hello");
-  }
-}
-greet();
+// 14
+// function greet(hi) {
+//   if (hi == undefined) {
+//     console.log("Anonymous");
+//   } else {
+//     console.log("Hello");
+//   }
+// }
+// greet();
 
 // 15
+function exponent(num1 = 2, num2 = 2) {
+  return num1 ** num2;
+  // return Math.pow(num1,num2)
+}
+console.log(exponent(10, 5));

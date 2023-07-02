@@ -14,6 +14,9 @@
 // }
 // console.log(names);
 
+// names.map((value)=>value.full_name = value.first_name + ' ' +value.last_name)
+// console.log(names);
+
 // 2
 // const users = [
 //   { first_name: "Handnm", last_name: "L demo", age: 17 },
@@ -26,12 +29,13 @@
 // ];
 // let newArray = users.map((value, i) => {
 //   if (users[i].age >= 18) {
-//     value.isMature = "True";
+//     return (value.isMature = "True");
 //   } else {
-//     value.isMature = "False";
+//     return (value.isMature = "False");
 //   }
 // });
 // console.log(users);
+// console.log(newArray);
 
 // 3
 // let arr = [1, 2, 3, 5];
@@ -47,25 +51,60 @@
 // let newArray = nestedArray.flat();
 // console.log(newArray);
 // for (let value of newArray) {
-//     console.log(value)
+//   console.log(value);
 // }
 // console.log(nestedArray);
 
 // 5
-const nestedObject = {
-  name: "Vishal Kukreja",
-  age: 32,
-  address: {
-    street: "123 Mumbai fashion St",
-    city: "Midtown",
-    state: "MH",
-  },
-  hobbies: ["reading", "drawing", "gardening"],
-};
+// const nestedObject = {
+//   name: "Vishal Kukreja",
+//   age: 32,
+//   address: {
+//     street: "123 Mumbai fashion St",
+//     city: "Midtown",
+//     state: "MH",
+//   },
+//   hobbies: ["reading", "drawing", "gardening"],
+// };
 
-for (let values of nestedObject) {
-  console.log(values);
-}
+// for (let key in nestedObject) {
+//   if (typeof nestedObject[key] === "object") {
+//     for (let insideKey in nestedObject[key]) {
+//       console.log(nestedObject[key][insideKey]);
+//     }
+//   } else if (Array.isArray(nestedObject[key])) {
+//     for (let index in nestedObject[key]) {
+//       console.log(nestedObject[key][index]);
+//     }
+//   } else {
+//     console.log(nestedObject[key]);
+//   }
+// }
 
-// console.log(nestedObject.name);
-// console.log(nestedObject.age);
+// 6
+// function isArrayContainNumber(input){
+//   for(let i=0; i<input.length; i++){
+//     if(typeof input[i] === "number" && !isNaN(input[i])){
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(isArrayContainNumber([1, 2, 3]));
+// console.log(isArrayContainNumber(["1", "a", "h"]));
+// console.log(isArrayContainNumber(["a", 3, "gh"]));
+// console.log(isArrayContainNumber(["a", '3df', "gh"]));
+
+// 7
+// const numbers = [1, 2, 3, 4];
+// let num = numbers.map(String);
+// console.log(num);
+
+// 8
+// const numbers = [1, 2, 3, 4];
+// const doubled = numbers.map((num, index, array) => {
+//   array.push(num * 2);
+//   return num * 2;
+// });
+// console.log(numbers, doubled);

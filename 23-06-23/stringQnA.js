@@ -260,17 +260,42 @@
 // console.log(truncate_string("Robin Singh", 4));
 
 // 64
-// function protect_email(email) {
-//   var atIndex = email.indexOf("@");
-//   if (atIndex > 0) {
-//     var firstPart = email.substring(0, atIndex);
-//     var hiddenPart = ".".repeat(Math.max(0, firstPart.length - 8));
-//     var lastPart = email.substring(atIndex);
-//     return firstPart.substring(0, 5) + hiddenPart + lastPart;
-//   } else {
-//     return email;
-//   }
+// function protect_email(pass_email) {
+//   return pass_email.replace(
+//     pass_email.slice(5, pass_email.indexOf("@")),
+//     "....."
+//   );
 // }
 // console.log(protect_email("robin_singh@example.com"));
+// console.log(protect_email("Jay_prajapati@example.com"));
 
 // 65
+// function string_parameterize(str1) {
+//   return str1.toLowerCase().replaceAll(" ", "-");
+// //   return str1.toLowerCase().split(" ").join("-");
+// }
+// console.log(string_parameterize("Robin Singh from USA."));
+
+// 66
+// function capitalize(str) {
+//   return str.charAt(0).toUpperCase() + str.slice(1);
+// }
+// console.log(capitalize("js string exercises"));
+
+// 67
+// function capitalize_Words(mainStr) {
+//   let str = mainStr.split(" ");
+//   for (let i = 0; i < str.length; i++) {
+//     str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1);
+//   }
+//   return str.join(" ");
+// }
+// console.log(capitalize_Words("js string exercises"));
+
+// 68
+// function insert(str, addStr = "", index = 0) {
+//   return str.slice(0, index) + addStr + str.slice(index);
+// }
+// console.log(insert("We are doing some exercises."));
+// console.log(insert("We are doing some exercises.", "JavaScript "));
+// console.log(insert("We are doing some exercises.", "JavaScript ", 18));
