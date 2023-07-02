@@ -238,3 +238,39 @@ const employees = [
   { name: "Emily", salary: 80000, department: "HR" },
   { name: "David", salary: 70000, department: "IT" },
 ];
+
+// function averageSalary(employees) {
+//     let a = 0;
+//     let b = 0;
+//     let c = 0;
+//     let d = 0;
+//     for (let i = 0; i < employees.length; i++) {
+//         if (employees[i].department == "HR") {
+//             a += employees[i].salary;
+//             b++;
+//         } else if (employees[i].department == "IT") {
+//             c +=employees[i].salary;
+//             d++;
+//         }
+//     }
+//     return { IT: a / b, HR: c / d }
+// }
+// let avgObject = averageSalary(employees);
+// console.log(avgObject);
+
+function averageSalary(employees) {
+    let obj = {};
+    let HR = [];
+    let IT = [];
+    for (let i = 0; i < employees.length; i++) {
+        if (employees[i].department == "HR") {
+            HR.push(employees[i].salary);
+        } else if (employees[i].department == "IT") {
+            IT.push(employees[i].salary);
+        }
+    }
+    obj = { HR, IT }
+    return obj;
+}
+let aveObject = averageSalary(employees);
+console.log(aveObject);
