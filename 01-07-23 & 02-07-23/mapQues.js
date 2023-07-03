@@ -63,3 +63,36 @@
 // console.log(checkArr);
 
 // 13
+// let users = [{ name: "Vansh" }, { age: 18 }, { uni: "SOU" }];
+// let names = users.map((user) => user.name);
+// console.log(names);
+
+// 14
+// let arr = [
+//   { a: 10, b: 20, c: [{ a: 11, b: 21, d: ["p", "q"] }] },
+//   { a: 12, b: 18, c: [{ a: 8, b: 25, d: [1, 2, "p"] }] },
+//   { a: 16, b: 29, c: [{ a: 5, b: 10, d: ["q", "r", "s"] }] },
+//   { a: 15, b: 20, c: [{ a: 11, b: 21, d: 5 }] },
+// ];
+
+// 15
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9],
+// ];
+// const flattenedArray = matrix.map((row) => [...row]);
+// console.log(flattenedArray);
+// console.log(matrix);
+
+// 16
+const products = [
+  { name: "iPhone", category: "Electronics" },
+  { name: "Chair", category: "Furniture" },
+  { name: "Shirt", category: "Clothing" },
+];
+const productsByCategory = products.map((product) => ({
+  //   ...product
+  category: product.category.toUpperCase() + " " + product.name,
+}));
+console.log(productsByCategory);
