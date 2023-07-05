@@ -496,3 +496,129 @@ const input = [
 //   console.log(a, b, c);
 // };
 // example(0, 1, 2);
+
+// 23
+// let arr = [1, 2, 3, 4, 5];
+// let nerArr = arr.reduce((acc, curr) => acc + curr ** 2);
+// console.log(nerArr);
+
+// 24
+const students = [
+  { name: "Alice", age: 20, grade: "A" },
+  { name: "Bob", age: 18, grade: "B" },
+  { name: "Charlie", age: 19, grade: "A" },
+  { name: "David", age: 20, grade: "C" },
+];
+// let sortAge = students.sort((a, c) => a.age - c.age);
+// console.log(sortAge);
+
+// let sortGrade = students.sort((a, c) =>
+// if (a.grade < c.grade) {
+//   return -1;
+// } else if (a.grade > c.grade) {
+//   return 1;
+// } else {
+//   return 0;
+// }
+
+// a.grade < c.grade ? -1 : 0;
+// a.grade > c.grade ? 1 : 0
+// );
+// console.log(sortGrade);
+
+// let sortName = students.sort((a, c) => a.name - c.name);
+// console.log(sortName);
+
+// let avgAge = students.reduce((acc, curr) => acc / 2 + curr.age / 2);
+// console.log(avgAge);
+
+// function avgArr(arr) {
+//   let tempLen = 0;
+//   let sum = arr.reduce((acc, curr) => {
+//     tempLen++;
+//     return acc + curr.age;
+//   }, 0);
+//   return sum / tempLen;
+// }
+// console.log(avgArr(students));
+
+// let sumAges = students.reduce((acc, curr) => acc + curr.age,0);
+// console.log(sumAges);
+
+// 25
+// const nestedArray = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+
+// const flatArr = nestedArray.reduce((acc, curr) => {
+//   return acc.concat(curr);
+//   // return [acc + "," + curr];
+// }, []);
+// console.log(flatArr);
+
+// 26
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let emptyArr = [];
+// let evenNum = numbers.reduce((acc, curr) => {
+//   if (curr % 2 == 0) {
+//     emptyArr.push(curr * curr);
+//   }
+//   return emptyArr;
+// });
+// console.log(evenNum);
+
+// 27
+// const numbers = [1, 2, 2, 3, 4, 4, 5];
+// let filteredNum = numbers.reduce((acc, curr) => {
+//   if (acc.includes(curr) === false) {
+//     acc.push(curr);
+//   }
+//   return acc;
+// }, []);
+// console.log(filteredNum);
+
+// 28
+// const words = ["apple", "banana", "orange"];
+// let findA = words.find((value) => value.includes("a"));
+// console.log(findA);
+
+// 29
+// const numbers = [2, 4, 3, 6, 8, 9, 10];
+// let findOdd = numbers.findIndex((value) => {
+//   return value % 2 !== 0;
+//   // return index;
+// });
+// console.log(findOdd);
+
+// 30
+// function factorial(num) {
+//   let result = 1;
+//   for (let i = 2; i <= num; i++) {
+//     result *= i;
+//   }
+//   return result;
+// }
+// console.log(factorial(2));
+
+// function factorial(num) {
+//   if (num == 0 || num == 1) {
+//     return 1;
+//   } else {
+//     return num * factorial(num - 1);
+//   }
+// }
+// console.log(factorial(6));
+
+// 31
+// const people = [
+//   { name: "Alice", age: 18 },
+//   { name: "Bob", age: 20 },
+//   { name: "Charlie", age: 19 },
+//   { name: "David", age: 21 },
+// ];
+// let findPerson = people.findIndex(
+//   (value) => value.name.includes("A") && value.age < 20
+// );
+// console.log(findPerson);
