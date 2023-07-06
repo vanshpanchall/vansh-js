@@ -62,6 +62,9 @@
 // let sortMonths = months.sort();
 // console.log(sortMonths);
 
+
+// 2D array to object 
+
 let details = [
   ["Name", "Vansh Panchal"],
   ["Course", "Computer Engineering"],

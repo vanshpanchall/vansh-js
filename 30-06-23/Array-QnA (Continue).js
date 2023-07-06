@@ -572,7 +572,7 @@ const students = [
 // 27
 // const numbers = [1, 2, 2, 3, 4, 4, 5];
 // let filteredNum = numbers.reduce((acc, curr) => {
-//   if (acc.includes(curr) === false) {
+//   if (!acc.includes(curr)) {
 //     acc.push(curr);
 //   }
 //   return acc;
@@ -622,3 +622,133 @@ const students = [
 //   (value) => value.name.includes("A") && value.age < 20
 // );
 // console.log(findPerson);
+
+// 32
+// function fun_name(arrayOfArray, array) {
+//   let a = arrayOfArray.some((val) =>
+//     val.sort().every((ele, i) => ele == array.sort()[i])
+//   );
+//   console.log(a);
+// }
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [88, 90],
+//   ],
+//   [1, 2]
+// );
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [88, 90],
+//   ],
+//   [2, 1]
+// );
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [88, 90],
+//   ],
+//   [22, 15]
+// );
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [22, 90, 15],
+//     [88, 90],
+//   ],
+//   [22, 15, 90]
+// );
+
+// 33
+// function fun_name(arrayOfArray, array) {
+//   let a = arrayOfArray.some((value) => value.every((ele, i) => ele == array[i]));
+// console.log(a)
+// };
+
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [88, 90],
+//   ],
+//   [1, 2]
+// );
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [88, 90],
+//   ],
+//   [2, 1]
+// );
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [88, 90],
+//   ],
+//   [22, 15]
+// );
+// fun_name(
+//   [
+//     [1, 2],
+//     [34, 67],
+//     [67, 77],
+//     [22, 90, 15],
+//     [88, 90],
+//   ],
+//   [22, 15, 90]
+// );
+
+// 34
+
+// 35
+
+// 36
+// function returnSumInteger(arr, sum) {
+//   let a = arr.reduce((acc, curr) => {
+//     for (let i = 0; i < arr.length; i++) {
+//       if (curr + arr[i] === sum) {
+//         acc.push([curr, arr[i]]);
+//       }
+//     }
+//     return acc;
+//   }, []);
+//   return a[2];
+// }
+// console.log(returnSumInteger([10, 20, 10, 40, 50, 60, 70], 50));
+
+// 37
+// let arr = [NaN, 0, 15, false, -22, "", undefined, 47, null];
+// let onlyNum = arr.filter(
+//   (value) => typeof value == "number" && value !== 0 && !isNaN(value)
+// );
+// console.log(onlyNum);
+
+// 38
+
+// 39
+// function remove_array_element(a, b) {
+//   return a.filter(val => val != b);
+// }
+// console.log(remove_array_element([2, 5, 9, 6], 5));
+
+// 40
+function contains(a, b) {
+  return a.includes(b);
+}
+arr = [2, 5, 9, 6];
+console.log(contains(arr, 5));
+console.log(contains(arr, 10));
