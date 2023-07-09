@@ -210,20 +210,20 @@
 // }
 // addNumber(str);
 
-// function changeWords(str) {
-//   let words = str.split(" ");
-//   let a = words.map((word) => {
-//     if (word.length >= 4) {
-//       return word.at(0) + (word.length - 2) + word.at(-1);
-//     }
-//     return word;
-//   });
-//   let b = a.join(" ");
-//   return b;
-// }
-// console.log(
-//   changeWords("Every developer likes to mix kubernetes and javascript")
-// );
+function changeWords(str) {
+  let words = str.split(" ");
+  let a = words.map((word) => {
+    if (word.length >= 4) {
+      return word.at(0) + (word.length - 2) + word.at(-1);
+    }
+    return word;
+  });
+  let b = a.join(" ");
+  return b;
+}
+console.log(
+  changeWords("Every developer likes to mix kubernetes and javascript")
+);
 
 // 12
 // const products = [
@@ -713,8 +713,38 @@ const students = [
 // );
 
 // 34
+// function union(arr1, arr2) {
+//   let numbers = arr1.concat(arr2);
+//   let newUnion = numbers.reduce((accu, cur) => {
+//       if (!accu.includes(cur)) {
+//         accu.push(cur);
+//       }
+//       return accu;
+//     }, [])
+//     .sort((a, b) => a - b);
+//   return newUnion;
+// }
+// console.log(union([1, 2, 3], [100, 2, 1, 10]));
 
 // 35
+// function difference(arr1, arr2) {
+//   arr1 = arr1.flat(Infinity);
+//   arr2 = arr2.flat(Infinity);
+//   let array = [];
+//   arr1.filter((value) => {
+//     if (!arr2.includes(value)) {
+//       array.push(String(value));
+//     }
+//   });
+//   arr2.filter((value) => {
+//     if (!arr1.includes(value)) {
+//       array.push(String(value));
+//     }
+//   });
+//   return array.sort((a, b) => a - b);
+// }
+// console.log(difference([1, 2, 3, 4, 5], [1, [2], [3, [[4]]], [5, 6]]));
+// console.log(difference([1, 2, 3], [100, 2, 1, 10]));
 
 // 36
 // function returnSumInteger(arr, sum) {
@@ -738,6 +768,29 @@ const students = [
 // console.log(onlyNum);
 
 // 38
+// function num_string_range(start, end, skip) {
+//   let arr = [];
+//   if (typeof start === "string" && typeof end == "string") {
+//     const startCode = start.charCodeAt(0);
+//     const endCode = end.charCodeAt(0);
+//     for (let i = startCode; i <= endCode; i += skip) {
+//       let str1 = String.fromCharCode(i);
+//       arr.push(str1);
+//     }
+//   } else if (typeof start === "number" && typeof end == "number") {
+//     if (start < end) {
+//       for (let i = start; i <= end; i += skip) {
+//         arr.push(i);
+//       }
+//     } else if (start > end) {
+//       for (let i = start; i >= end; i -= skip) {
+//         arr.push(i);
+//       }
+//     }
+//   }
+//   return arr;
+// }
+// console.log(num_string_range("a", "z", 2));
 
 // 39
 // function remove_array_element(a, b) {
@@ -746,9 +799,48 @@ const students = [
 // console.log(remove_array_element([2, 5, 9, 6], 5));
 
 // 40
-function contains(a, b) {
-  return a.includes(b);
-}
-arr = [2, 5, 9, 6];
-console.log(contains(arr, 5));
-console.log(contains(arr, 10));
+// function contains(a, b) {
+//   return a.includes(b);
+// }
+// arr = [2, 5, 9, 6];
+// console.log(contains(arr, 5));
+// console.log(contains(arr, 10));
+
+// 41
+// function countArr(num) {
+//   return num.filter((a) => a.length).length;
+// }
+// console.log(countArr([2, 8, [6], 3, 3, 5, 3, 4, [5, 4]]));
+// console.log(countArr([2, 8, [6, 3, 3], [4], 5, [3, 4, [5, 4]]]));
+
+// 42
+// function findMaximumLength(arr) {
+//   let a = arr
+//     .map((value) => {
+//       if (Array.isArray(value)) {
+//         return value.length;
+//       }
+//     })
+//     .filter((value) => Number(value))
+//     .reduce((acc, cur) => (acc > cur ? acc : cur), 0);
+//   return a;
+// }
+// console.log(findMaximumLength([2, 8, [6], 3, 3, 5, 3, 4, [5, 4], [6]]));
+// console.log(findMaximumLength([2, 8, [6, 3, 3], [4], 5, [3, 4, [5, 4]]]));
+// console.log(
+//   findMaximumLength([2, 8, [6, 3, 3], [4], 5, [3, 4, [5, 4]], [23, 56]])
+// );
+// console.log(findMaximumLength([1, 5, 2, 6, 4, 23, 89]));
+
+// 43
+// function factorChain(num) {
+//   for (let i = 0; i < num.length - 1; i++) {
+//     if (num[i + 1] % num[i] != 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// console.log(factorChain([2, 4, 8, 16, 32]));
+// console.log(factorChain([2, 4, 16, 32, 64]));
+// console.log(factorChain([2, 4, 16, 32, 68]));

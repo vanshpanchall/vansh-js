@@ -47,16 +47,19 @@
 // result = '"' + result + '"';
 // console.log(result);
 
-// const d = {
-//   name: "Vansh",
-//   label: lang.find((e) => e.id === "JS"),
-// };
-// console.log(d);
+const d = {
+  name: "Vansh",
+  //   label: lang.find((e) => e.id === "JS").label,
+  //   label: lang.filter((e) => e.id === "JS").label,
+  //   label: lang.map((e) => e.id === "JS").label,
+  label: lang.forEach((e) => e.id === "JS")["sdf"].label
+};
+console.log(d);
 
 // let abc = "Hello World";
 // let newAbc = abc.split("").reverse().join("");
-// // abc.reverse();
-// // let sec=newAbc.reverse();
+// abc.reverse();
+// let sec = newAbc.reverse();
 // console.log(newAbc);
 
 // function reverseStr(str) {
