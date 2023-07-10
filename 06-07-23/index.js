@@ -47,14 +47,14 @@
 // result = '"' + result + '"';
 // console.log(result);
 
-const d = {
-  name: "Vansh",
-  //   label: lang.find((e) => e.id === "JS").label,
-  //   label: lang.filter((e) => e.id === "JS").label,
-  //   label: lang.map((e) => e.id === "JS").label,
-  label: lang.forEach((e) => e.id === "JS")["sdf"].label
-};
-console.log(d);
+// const d = {
+//   name: "Vansh",
+//   label: lang.find((e) => e.id === "JS").label,
+//   label: lang.filter((e) => e.id === "JS").label,
+//   label: lang.map((e) => e.id === "JS").label,
+// label: lang.forEach((e) => e.id === "JS")["sdf"].label,
+// };
+// console.log(d);
 
 // let abc = "Hello World";
 // let newAbc = abc.split("").reverse().join("");
@@ -195,11 +195,43 @@ console.log(d);
 // console.log(flatArr);
 
 // forEach();
+// let rating = [3, 4, 2, 5, 3, 2];
+// let newRating = rating.forEach((value) => value + 1);
+// console.log(newRating); // it doesn't return anything but undefined
+
 // includes();
+// const toons = ["Tom and Jerry", "Doraemon", "Mickey Mouse", "Motu Patlu"];
+// let findToons = toons.includes("Doraemon", 1);
+// console.log(findToons);
+
 // indexOf();
+// const toons = ["Tom and Jerry", "Doraemon", "Mickey Mouse", "Motu Patlu"];
+// let findToons = toons.indexOf("Mickey Mouse", 2);
+// console.log(findToons);
+
 // isArray();
+// const toons = ["Tom and Jerry", "Doraemon", "Mickey Mouse", "Motu Patlu"];
+// let toons = [94];
+// const isArray = Array.isArray(toons);
+// console.log(isArray);
+
 // join();
+// const toons = ["Tom and Jerry", "Doraemon", "Mickey Mouse", "Motu Patlu"];
+// let joinToons = toons.join(" - ");
+// let joinToons = toons.join();
+// console.log(joinToons);
+
 // lastIndexOf();
+const toons = [
+  "Tom and Jerry",
+  "Doraemon",
+  "Mickey Mouse",
+  "Motu Patlu",
+  "Doraemon",
+];
+const lastToon = toons.lastIndexOf("Doraemon");
+console.log(lastToon);
+
 // map();
 // pop();
 // push();
