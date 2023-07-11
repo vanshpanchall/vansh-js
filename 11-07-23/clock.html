@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: yellow;
+            font-size: 5rem;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        /* .clock span { */
+        /* padding-inline: 10px; */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <!-- <div class="clock">
+        <span id="hrs">00</span>
+        <span>:</span>
+        <span id="min">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+        <span>:</span>
+        <span id="mili">00</span>
+    </div>
+
+
+    <script>
+        let hrs = document.getElementById("hrs")
+        let min = document.getElementById("min")
+        let sec = document.getElementById("sec")
+        let mili = document.getElementById("mili")
+
+        setInterval(() => {
+            let date = new Date();
+            hrs.innerHTML = (date.getHours() < 10 ? "0" : "") + date.getHours();
+            min.innerHTML = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
+            sec.innerHTML = (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
+            mili.innerHTML = (date.getMilliseconds() < 10 ? "00" : "") + date.getMilliseconds();
+        }, 1)
+    </script> -->
+
+
+    <div class="clock">
+        <span id="hrs"></span>
+        <span id="min"></span>
+        <span id="sec"></span>
+        <span id="mili"></span>
+    </div>
+
+    <script>
+        function myClock() {
+            let date = new Date();
+
+            let hrs = (date.getHours() < 10 ? "0" : "") + date.getHours();
+            let min = (date.getMinutes() < 10 ? "0" : "") + date.getMinutes();
+            let sec = (date.getSeconds() < 10 ? "0" : "") + date.getSeconds();
+            let mili = date.getMilliseconds();
+
+            if (mili < 10) {
+                mili = "00" + mili
+            }
+            else if (mili < 100) {
+                mili = "0" + mili;
+            }
+
+            let clock = hrs + ":" + min + ':' + sec + ':' + mili;
+            document.getElementById('hrs').innerHTML = clock;
+        }
+        setInterval(myClock, 1)
+    </script>
+
+    <!-- <div id="digital"></div>
+    <script>
+        function call() {
+            let date = new Date();
+            document.getElementById("digital").innerHTML = date.toLocaleTimeString();
+        }
+        setInterval(call, 1000);
+    </script> -->
+
+</body>
+
+</html>
