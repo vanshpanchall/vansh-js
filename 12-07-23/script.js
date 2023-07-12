@@ -301,6 +301,146 @@
 
 // Write a JavaScript function that returns the number of minutes in hours and minutes
 
-function timeConvert(mins) {}
+// function timeConvert(mins) {
+//   let num = mins;
+//   let hrs = num / 60;
+//   let minutes = mins % 60;
+//   return (
+//     num +
+//     " minutes = " +
+//     Math.floor(hrs) +
+//     " hour(s) and " +
+//     Math.round(minutes) +
+//     " minute(s) "
+//   );
+// }
+// console.log(timeConvert(200));
+// console.log(timeConvert(150));
 
-console.log(timeConvert(200));
+// Write a JavaScript function to get the number of days in a year
+
+// function days_of_a_year(year) {
+//   if (year % 4 == 0) {
+//     return 366;
+//   }
+//   return 365;
+// }
+
+// console.log(days_of_a_year(2023));
+// console.log(days_of_a_year(2024));
+
+// Write a JavaScript function to count the number of days passed since the year began
+// function days_passed(date) {}
+// console.log(days_passed(new Date(2015, 0, 15)));
+// console.log(days_passed(new Date(2015, 11, 14)));
+
+// doubt
+
+//  Write a JavaScript program to calculate age
+
+// function calculate_age(date) {
+//   return new Date().getFullYear() - date.getFullYear();
+// }
+
+// console.log(calculate_age(new Date(2005, 3, 16)));
+// console.log(calculate_age(new Date(1965, 11, 11)));
+// console.log(calculate_age(new Date(1962, 8, 27)));
+
+// MATH & NUMBER QUESTIONS FOR PRACTICE
+
+//  Write a JavaScript function to generate a random integer
+
+// function random(num1 = 0, num2 = 0) {
+//   return num1 + Math.floor(Math.random() * (num2 - num1 + 1));
+// }
+// console.log(random(20, 1));
+// console.log(random(1, 10));
+// console.log(random(6));
+// console.log(random());
+
+//  Write a JavaScript function to format a number up to specified decimal places
+// function decimals(num, range) {
+//   return num.toFixed(range);
+// }
+
+// console.log(decimals(2.100212, 2));
+// console.log(decimals(2.100212, 3));
+// console.log(decimals(2100, 2));
+
+//  Write a JavaScript function to find the highest value in an array
+
+// function max(arr) {
+//   return Math.max(...arr);
+// }
+// console.log(max([12, 34, 56, 1]));
+// console.log(max([-12, -34, 0, -56, -1]));
+
+// Write a JavaScript function to find the lowest value in an array
+
+// function max(arr) {
+//   return Math.min(...arr);
+// }
+// console.log(max([12, 34, 56, 1]));
+// console.log(max([-12, -34, 0, -56, -1]));
+
+//  Write a JavaScript function to round a number to decimal place
+
+// function precise_round(num, range) {
+//   return num.toFixed(range);
+// }
+
+// console.log(precise_round(12.375, 2));
+// console.log(precise_round(-10.3079499, 3));
+// console.log(precise_round(10.49999, 0));
+// console.log(precise_round(10.49999, 2));
+
+// Write a JavaScript function to check whether a value is an integer or not
+
+// function is_Int(num) {
+//   return Number.isInteger(num);
+// }
+
+// console.log(is_Int(23));
+// console.log(is_Int(4e2));
+// console.log(is_Int(NaN));
+// console.log(is_Int(23.75));
+// console.log(is_Int(-23));
+
+// Write a JavaScript function to check whether a variable is numerical or not
+
+// function is_Numeric(num) {
+//   if (Number(num)) {
+//     return "true";
+//   }
+//   return "false";
+// }
+
+// console.log(is_Numeric(12));
+// console.log(is_Numeric("abcd"));
+// console.log(is_Numeric("12"));
+// console.log(is_Numeric(" "));
+// console.log(is_Numeric(1.2));
+// console.log(is_Numeric(-200));
+
+// Write a JavaScript function to test if a number is a power of 2
+
+// function power_of_2(num) {
+//   //   if (Math.pow(num) ** 2) {
+//   //     return "true";
+//   //   }
+//   //   return "false";
+//   return (num & (num - 1)) == 0;
+// }
+
+// function power_of_2(num) {
+//   for (let i = 1; i < num; i++) {
+//     if (Math.pow(2, i) === num) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// console.log(power_of_2(16));
+// console.log(power_of_2(18));
+// console.log(power_of_2(256));
