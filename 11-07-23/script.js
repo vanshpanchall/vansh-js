@@ -155,6 +155,3 @@
 // console.log(month_name(new Date("03/16/2005")));
 // console.log(month_name(new Date("11/11/2009")));
 // console.log(month_name(new Date("11/13/2014")));
-
-// Write a JavaScript function to compare dates (i.e. greater than, less than or equal to)
-
