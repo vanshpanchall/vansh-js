@@ -210,20 +210,20 @@
 // }
 // addNumber(str);
 
-function changeWords(str) {
-  let words = str.split(" ");
-  let a = words.map((word) => {
-    if (word.length >= 4) {
-      return word.at(0) + (word.length - 2) + word.at(-1);
-    }
-    return word;
-  });
-  let b = a.join(" ");
-  return b;
-}
-console.log(
-  changeWords("Every developer likes to mix kubernetes and javascript")
-);
+// function changeWords(str) {
+//   let words = str.split(" ");
+//   let a = words.map((word) => {
+//     if (word.length >= 4) {
+//       return word.at(0) + (word.length - 2) + word.at(-1);
+//     }
+//     return word;
+//   });
+//   let b = a.join(" ");
+//   return b;
+// }
+// console.log(
+//   changeWords("Every developer likes to mix kubernetes and javascript")
+// );
 
 // 12
 // const products = [
@@ -447,20 +447,21 @@ const input = [
   { name: "Mike", salary: 65000, department: "IT" },
   { name: "Emily", salary: 80000, department: "HR" },
   { name: "David", salary: 70000, department: "IT" },
+  { name: "Devi", salary: 70000, department: "ITI" },
 ];
 
-// function groupAlphabetically(arr) {
-//   let mix = {};
-//   let firstChar = arr.map((word) => word.name.charAt(0).toUpperCase());
-//   firstChar.forEach((value) => {
-//     let charName = arr.filter(
-//       (word) => word.name.charAt(0).toUpperCase() === value
-//     );
-//     mix[value] = charName;
-//   });
-//   return mix;
-// }
-// console.log(groupAlphabetically(input));
+function groupAlphabetically(arr) {
+  let mix = {};
+  let firstChar = arr.map((word) => word.name.charAt(0).toUpperCase());
+  firstChar.forEach((value) => {
+    let charName = arr.filter(
+      (word) => word.name.charAt(0).toUpperCase() === value
+    );
+    mix[value] = charName;
+  });
+  return mix;
+}
+console.log(groupAlphabetically(input));
 
 // function groupByDepartment(arr){
 //     let mix = {};
