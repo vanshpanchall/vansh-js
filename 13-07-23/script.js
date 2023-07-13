@@ -58,8 +58,3 @@
 // let num7 = (0.546 / 2) * 5;
 // console.log(isFinite(num7));
 // console.log(Number.isFinite(num7));
-
-
-// DOCUMENT OBJECT METHOD
-
-document.getElementById("heading");
