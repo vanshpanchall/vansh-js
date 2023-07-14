@@ -68,11 +68,11 @@ box2.classList.add("border");
 box3.classList.add("border");
 box4.classList.add("border");
 
-let changeBorder = document.getElementsByClassName("border");
+// let changeBorder = document.getElementsByClassName("border");
 // for (let i = 0; i < changeBorder.length; i++) {
-    changeBorder.style.border="8px"
-    changeBorder.style.borderStyle = "solid";
-    changeBorder.style.borderColor = "white";
+// changeBorder.style.border="8px"
+// changeBorder.style.borderStyle = "solid";
+// changeBorder.style.borderColor = "white";
 //  }
 
 // ADDING CLASSES
@@ -87,6 +87,22 @@ let changeBorder = document.getElementsByClassName("border");
 // box1.style.backgroundColor = 'red';
 
 // ASSESSING ATTRUBUTES
-console.log(box1.getAttribute("height"));
+// console.log(box1.getAttribute("height"));
 // console.log(box1.getAttributeNS("height"));
-console.log(box1.getAttributeNames("height"));
+// console.log(box1.getAttributeNames("height"));
+
+// let firstEle = document.body;
+// const newHeading = document.createElement("h1");
+// newHeading.textContent=("Hello There");
+// firstEle.appendChild(newHeading)
+// firstEle.append(newHeading)
+
+let newElement = document.getElementById("box-1");
+newH2 = document.createElement("h2");
+newH2.textContent = "This is DOM!";
+newElement.appendChild(newH2);
+
+document.write("This is Document Write");
+
+let range = document.createRange();
+console.log(range);
