@@ -15,13 +15,15 @@
         <div class="logo">
             <h1>LOGO</h1>
         </div>
-        <ul id="mySidenav" class="sidenav">
-            <li class="clickEvent"><a href="#">ABOUT</a></li>
+        <ul id="slideNav" class="sidenav">
+            <span><a href class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a></span>
+
+            <li onclick="changeColor()" class="clickEvent active"><a href="#">ABOUT</a></li>
             <li class="clickEvent"><a href="#">SERVICES</a></li>
-            <li class="clickEvent"><a href="#">WORK</a></li>
-            <li class="clickEvent"><a href="#">CONTACT</a></li>
+            <li class="clickEvent"><a href="#">OUR WORK</a></li>
+            <li class="clickEvent"><a href="#">CONTACT US</a></li>
         </ul>
-        <span><a href class="closebtn" onclick="closeNav()"><i class="fa-solid fa-bars"></i></a></span>
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
     </nav>
 
     <script src="script.js"></script>
