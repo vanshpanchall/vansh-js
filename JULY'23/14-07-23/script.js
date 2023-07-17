@@ -70,13 +70,13 @@
 // confirm("This is Onclick");
 // }
 
-document.getElementById("box-2").addEventListener("click", function (e) {
-  // alert("This is onclick on box-2");
-  // console.log("This is onclick on box-2");
-  // document.write("This is onclick on box-2");
-});
+// document.getElementById("box-2").addEventListener("click", function (e) {
+// alert("This is onclick on box-2");
+// console.log("This is onclick on box-2");
+// document.write("This is onclick on box-2");
+// });
 
-document.getElementById("box-3").addEventListener("click", function (e) {
-  // alert("This is onclick on box-3");
-  console.log("This is onclick on box-3");
-});
+// document.getElementById("box-3").addEventListener("click", function (e) {
+// alert("This is onclick on box-3");
+// console.log("This is onclick on box-3");
+// });

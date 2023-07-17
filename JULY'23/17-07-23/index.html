@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM in JS</title>
+    <title>Events in JS</title>
     <style>
         * {
             margin: 0;
@@ -26,14 +26,11 @@
             padding: 15px;
             margin: 10px;
         }
-
-        .border {
-            border: 8px solid white;
-        }
     </style>
 </head>
 
 <body>
+
     <div class="container">
         <div class="bg-black dxsecx" id="box-1" height="250px">
             <h1 class="heading">Document Object Model (DOM)</h1>
@@ -47,20 +44,13 @@
         <div class="bg-black" id="box-4">
             <h1 class="heading">Document Object Model (DOM)</h1>
         </div>
-        <!-- <div class="bg-black" id="box-3">
-            <h1 class="heading">Document Object Model <span>(DOM) <p>this is inside span</p> </span>
-                <p>This is inside h1</p>
-            </h1>
-        </div> -->
     </div>
 
-    <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-    </ul>
+    <button id="btn">Click Me!</button>
+    
+    <p id="message"></p>
 
-    <script src="script.js"></script>
+    <script src="events.js"></script>
 </body>
 
 </html>
