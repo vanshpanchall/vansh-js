@@ -58,11 +58,25 @@
 // console.log(Array.from(getLi));
 // console.log(getLi);
 
-
-let getAt=document.getElementById("box-3")
+// let getAt=document.getElementById("box-3")
 // console.log(getAt.getAttribute("data"));
 // console.log(getAt.hasAttribute("data"));
-getAt.setAttribute("class", 'border');
-getAt.attributes;
+// getAt.setAttribute("class", 'border');
+// getAt.attributes;
 // console.log(getAt);
 
+// document.getElementById("box-3").onclick = function () {
+//     alert("This is Onclick");
+// confirm("This is Onclick");
+// }
+
+document.getElementById("box-2").addEventListener("click", function (e) {
+  // alert("This is onclick on box-2");
+  // console.log("This is onclick on box-2");
+  // document.write("This is onclick on box-2");
+});
+
+document.getElementById("box-3").addEventListener("click", function (e) {
+  // alert("This is onclick on box-3");
+  console.log("This is onclick on box-3");
+});

@@ -96,3 +96,76 @@
 //   return b;
 // }
 // console.log(fun("ab34bb43b"));
+
+// QUESTIONS
+
+// 1
+
+// function device() {
+//     console.log(name);
+//     console.log(price);
+//     var name = 'mobile';
+//     let price = 50000;
+// }
+// device(); // Output - mobile undefined
+
+// 2
+// console.log(+true);
+// console.log(typeof +true);
+
+// 3
+
+// let type = "clothes";
+// const newClothes = {
+//   clothes: "shirt",
+// };
+// console.log(newClothes[type]);
+// console.log(newClothes["clothes"]);
+// console.log(newClothes.type);
+// console.log(newClothes.clothes);
+
+// 4
+// let a = { name: "Vansh" };
+// let b;
+// b = a;
+// a.name = "Bhaumik";
+// console.log(b.name);
+
+// 5
+// let a = 5;
+// let b = new Number(5);
+
+// console.log(a == b);
+// console.log(a === b);
+
+// 6
+// function device() {
+//     console.log('laptop');
+// }
+// device.name = 'mobile';
+// console.log(device());
+
+// 7
+// function age(...a) {
+//   console.log(typeof a);
+// }
+// age(18);
+
+// 8
+// console.log(typeof typeof true);
+// console.log(typeof typeof 5);
+// console.log(typeof []);
+
+// 9
+// console.log(!true - true);
+
+// 10
+// function greet() {
+//   return () => 0;
+// }
+// console.log(typeof greet());
+
+// 11
+const num = [1, 2, 3];
+num[5] = num;
+console.log(num);
