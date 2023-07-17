@@ -10,6 +10,7 @@
 //     classList.add('active');
 // }
 
+// ----------- working ------------
 
 function openNav() {
   document.getElementById("slideNav").style.width = "100%";
@@ -18,3 +19,15 @@ function openNav() {
 function closeNav() {
   document.getElementById("slideNav").style.width = "0";
 }
+
+const links = document.querySelectorAll(".nav-link");
+
+links.forEach((link) => {
+  link.addEventListener("click", function () {
+    links.forEach((link) => {
+      return link.classList.remove("active");
+    });
+    return link.classList.add("active");
+  });
+});
+

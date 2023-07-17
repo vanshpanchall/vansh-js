@@ -1,6 +1,6 @@
-let clickBtn = document.querySelector("#btn");
+// let clickBtn = document.querySelector("#btn");
 
-let btn = document.querySelector("#btn");
+// let btn = document.querySelector("#btn");
 
 // clickBtn.onclick = function () {
 //   alert("Hello There!")
@@ -84,9 +84,24 @@ let btn = document.querySelector("#btn");
 //   }
 // });
 
-// KEYBOARD EVENTS 
+// KEYBOARD EVENTS
 
-btn.addEventListener("keyup", (e) => {
-  let msg = document.querySelector("#messege");
-  msg.textContent = alert("This is Keyup");
-});
+// btn.addEventListener("keyup", (e) => {
+//   let msg = document.querySelector("#messege");
+//   msg.textContent = alert("This is Keyup");
+// });
+
+
+// ---------- EXTRA ----------
+
+let a = [1, 2, 3, 4, 5];
+let b = [
+  { id: 1, name: "hi" },
+  { id: 2, name: "hello" },
+  { id: 20, name: "hey" },
+];
+
+function filterId(arr1, arr2) {
+  return arr2.filter((value) => !arr1.includes(value.id));
+}
+console.log(filterId(a, b));

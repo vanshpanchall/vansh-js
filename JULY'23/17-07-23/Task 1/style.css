@@ -9,6 +9,15 @@ body {
   background-color: black;
 }
 
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
 nav {
   background-color: yellow;
   padding: 2rem;
@@ -17,79 +26,74 @@ nav {
   justify-content: space-between;
 }
 
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-/* .logo{
+.logo {
   width: 20%;
-} */
-/* span{
-    width: 20%;
-    display: flex;
-    justify-content: end;
+}
 
-} */
-/* .sidenav {
-  width: 60%;
+.sidenav {
+  width: 80%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-} */
+  justify-content: center;
+}
 
-/* .active {
-  color: blueviolet;
-} */
+.sidenav li {
+  padding-left: 4rem;
+}
 
-/* .sidenav li {
+nav span {
   display: none;
-} */
-
-/* span a:hover > .sidenav li {
-  display: block;
-} */
-
-.mySidenav {
-  transition: all 5s;
-  -webkit-transition: all 5s;
-  -moz-transition: all 5s;
-  -ms-transition: all 5s;
-  -o-transition: all 5s;
-}
-.sidenav {
-  position: fixed;
-  height: 100%;
-  width: 0;
-  /*z-index: 1;
-  */
-  top: 0;
-  right: 0;
-  display: block;
-  background-color: yellow;
-  overflow: hidden;
-  padding-top: 6rem;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
 }
 
-.sidenav > li > a {
-  padding: 10px 10px 10px 100px;
-  font-size: 25px;
-  display: block;
+.nav-link.active {
+  color: black;
+  text-decoration: underline black;
+  text-underline-offset: 0.3em;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  -ms-transition: 0.3s all;
+  -o-transition: 0.3s all;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  top: 25px;
-  right: 30px;
-  font-size: 40px;
-  margin-left: 50px;
+@media (max-width: 490px) {
+  nav span {
+    display: block;
+  }
+
+  .sidenav li {
+    padding: 0;
+  }
+
+  .sidenav {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    /* z-index: 1; */
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: yellow;
+    overflow: hidden;
+    padding-top: 6rem;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
+  .sidenav > li > a {
+    padding: 10px 10px 10px 100px;
+    font-size: 25px;
+    display: block;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    font-size: 40px;
+    margin-left: 50px;
+  }
 }
