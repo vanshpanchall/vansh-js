@@ -194,6 +194,16 @@
 // console.log(a.name);
 // console.log(b.name);
 
+// let string = "Hello Javascript";
+// function getWord(string, character) {
+//   let a = string.split(" ");
+//   let b = a.filter((value) => {
+//     return value.includes(character);
+//   });
+//   return b.join(" ");
+// }
+// console.log(getWord(string, "h"));
+
 // FUNCTIONS
 
 // 2
@@ -391,6 +401,62 @@
 // console.log(string_parameterize("Robin Singh from USA."));
 
 // 69
-let text = "Apple, Banana, Kiwi";
-text.slice(-12, -6);
-console.log(text);
+// let text = "Apple, Banana, Kiwi";
+// text.slice(-12, -6);
+// console.log(text);
+
+// 67
+// function capitalize_Words(str) {
+//   let str1 = str.split(" ");
+//   for (let i = 0; i < str1.length; i++) {
+//     str1[i] = str1[i].charAt(0).toUpperCase() + str1[i].slice(1);
+//   }
+//   return str1.join(" ");
+// }
+// console.log(capitalize_Words("js string exercises"));
+
+// 68
+// function insert(str, char = "", index = 0) {
+//   return str.slice(0, index) + char + str.slice(index);
+// }
+
+// console.log(insert("We are doing some exercises."));
+// console.log(insert("We are doing some exercises.", "JavaScript "));
+// console.log(insert("We are doing some exercises.", "JavaScript ", 18));
+
+// let str = "hello there";
+// console.log(str.padStart(10, "yoo"));
+
+// console.log(NaN || false);
+// console.log(5 && Number);
+// console.log(false && NaN);
+// console.log(false && "");
+
+// let a = 10;
+// console.log(a++ + ++a + ++a + a++ + --a + a-- + a++ + ++a);
+
+// let type = "clothes";
+// const newClothes = {
+//   clothes: "shirt",
+// };
+// console.log(newClothes[type]);
+
+// let a = 5;
+// let b = new Number(5);
+// console.log(typeof b);
+// console.log(a == b);
+// console.log(a === b);
+
+// function age(...a) {
+//   console.log(typeof a);
+//   console.log(a);
+// }
+// age(18);
+
+// console.log(typeof typeof true);
+// console.log(typeof typeof 5);
+// console.log(typeof []);
+
+// function findMax(str) {
+
+// }
