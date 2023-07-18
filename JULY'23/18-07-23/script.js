@@ -196,6 +196,7 @@
 
 // FUNCTIONS
 
+// 2
 // with para with return
 // function calculateSum(num1, num2) {
 //   return num1 + num2;
@@ -224,7 +225,172 @@
 // }
 // calculateSum();
 
+// 4
 // let multiply = function (a, b) {
 //   return a * b;
 // };
 // console.log(multiply(10, 5));
+
+// 6
+// let squareNum = (num) => num * num;
+// console.log(squareNum(5));
+
+// 7
+// function getFullName(fname, lname) {
+//   return fname + " " + lname;
+// }
+// console.log(getFullName('Vansh', 'Panchal'));
+
+// 10
+
+// with ternary operator
+// function maxNum(a, b, c) {
+//   return a > b ? (a > c ? a : c) : b > c ? b : c;
+// }
+// console.log(maxNum(12, 51, 88));
+
+// function maxNum(a, b, c) {
+//   console.log(a > b ? (a > c ? a : c) : b > c ? b : c);
+// }
+// maxNum(25,89,63);
+
+// function maxNum() {
+//   let a = 25;
+//   let b = 50;
+//   let c = 89;
+//   return (a > b ? (a > c ? a : c) : b > c ? b : c);
+// }
+// maxNum();
+
+// function maxNum() {
+//   let a = 25;
+//   let b = 50;
+//   let c = 89;
+//   console.log(a > b ? (a > c ? a : c) : b > c ? b : c);
+// }
+// maxNum();
+
+// with if-else
+// function maxNum(a, b, c) {
+//   if (a > b) {
+//     if (a > c) {
+//       console.log(a);
+//     } else {
+//       console.log(c);
+//     }
+//   } else {
+//     if (b > c) {
+//       console.log(b);
+//     } else {
+//       console.log(c);
+//     }
+//   }
+// }
+// maxNum(65, 84, 69);
+
+// 11
+
+// function calculatePrice(price, discount = 10) {
+//   return price - (price * discount) / 100;
+// }
+// console.log(calculatePrice(100, 20));
+
+// let calculatePrice = (price, discount = 10) => {
+//   return price - (price * discount) / 100;
+// };
+// console.log(calculatePrice(800, 50));
+
+// 13
+// function calculateMultiply(num1, num2) {
+//   if (num1 == undefined && num2 == undefined)  {
+//     return 1;
+//   } else {
+//     return num1 * num2;
+//   }
+// }
+// console.log(calculateMultiply(-12, 2));
+// console.log(calculateMultiply());
+// console.log(calculateMultiply(5));
+
+// 14
+// function greet(input) {
+//   if (input == undefined) {
+//     console.log("Anonymous");
+//   } else {
+//     console.log("hello");
+//   }
+// }
+// greet();
+
+// let str = "Vansh";
+// let str1 = " Panchal";
+// console.log(str.length);
+// console.log(str.concat(str1));
+
+// let str = "Hello there my name is vansh";
+// console.log(str.slice(-11, -1));
+// console.log(str.slice(11));
+// console.log(str.substring(0, 11));
+// console.log(str.substring("12"));
+
+// let str = "Hello! there ";
+// console.log(str.split("!"));
+
+// const sentence = "I love JavaScript!";
+// console.log(sentence.indexOf("JavaScript"));
+
+// make a function which which takes two paras in which the first is string and the second is the word or letter which we have to find from the string
+
+// function findLette(str, letter) {
+//   if (str.includes(letter)) {
+//     return str.search(letter);
+//     // return str.split(letter);
+//   } else {
+//     return "There is no such Character";
+//   }
+// }
+// console.log(findLette("Hello there", "r"));
+
+// const text = "Hello, World!";
+// console.log(text.repeat(3));
+// const sentence = "The quick brown fox";
+
+// function isStr(input) {
+//   return typeof input == 'string';
+// };
+// console.log(isStr('w3school'));
+
+// function is_Blank(str) {
+//   return str.trim().length === 0;
+// }
+// console.log(is_Blank("")); // true
+// console.log(is_Blank("abc")); // false
+
+// 62
+// function string_to_array(str) {
+//   return str.split(" ");
+// }
+// console.log(string_to_array("Robin Singh"));
+
+// 63
+// function truncate_string(str, value) {
+//   return str.slice(0, value);
+// }
+// console.log(truncate_string("Robin Singh", 4));
+
+// 64
+// function protect_email(mail) {
+//   return mail.replace(mail.slice(5, mail.indexOf("@")), "*****");
+// }
+// console.log(protect_email("robin_singh@example.com"));
+
+// 65
+// function string_parameterize(str) {
+//   return str.replaceAll(" ", "-").toLowerCase();
+// }
+// console.log(string_parameterize("Robin Singh from USA."));
+
+// 69
+let text = "Apple, Banana, Kiwi";
+text.slice(-12, -6);
+console.log(text);
