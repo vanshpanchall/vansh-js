@@ -435,15 +435,178 @@
 // console.log(checkStr('356f5d4e'));
 // console.log(checkStr('feehsdi'));
 
-
 // function printNums(num1, num2) {
-//     let empArr = [];
-//     for (i = num1; i < num2; i++) {
-//         return i;
-//     }
-//     return empArr.push(i);
+//   let empArr = [];
+//   for (i = 0; i < num1; i++) {
+//     empArr.push(num2);
+//   }
+//   return empArr;
 // }
-// console.log(printNums(2, 4));
+// console.log(printNums(2, 8));
+
+// print the number between num1 and num2
+// function printNums(num1, num2) {
+//   let empArr = [];
+//   for (i = num1; i < num2; i++) {
+//     empArr.push(i);
+//   }
+//   return empArr;
+// }
+// console.log(printNums(2, 8));
 
 // ------- ARRAY --------
 
+// 6
+// function containesNum(arr) {
+//   return arr.some(item=>typeof item==="number")
+// }
+// console.log(containesNum(["1", "a", "h"]));
+// console.log(containesNum([3, "a", "h"]));
+
+// 9
+let mainDonut = [
+  {
+    id: "0001",
+    type: "donut",
+    name: "Cake",
+    ppu: 0.55,
+    batters: {
+      batter: [
+        { id: "1001", type: "Regular" },
+        { id: "1002", type: "Chocolate" },
+        { id: "1003", type: "Blueberry" },
+        { id: "1004", type: "Devil's Food" },
+      ],
+    },
+    topping: [
+      { id: "5001", type: "None" },
+      { id: "5002", type: "Glazed" },
+      { id: "5005", type: "Sugar" },
+      { id: "5007", type: "Powdered Sugar" },
+      { id: "5006", type: "Chocolate with Sprinkles" },
+      { id: "5003", type: "Chocolate" },
+      { id: "5004", type: "Maple" },
+    ],
+  },
+  {
+    id: "0002",
+    type: "donut2",
+    name: "Raised",
+    ppu: 0.55,
+    batters: {
+      batter: [{ id: "1001", type: "Regular" }],
+    },
+    topping: [
+      { id: "5001", type: "None" },
+      { id: "5002", type: "Glazed" },
+      { id: "5005", type: "Sugar" },
+      { id: "5003", type: "Chocolate" },
+      { id: "5004", type: "Maple" },
+    ],
+  },
+  {
+    id: "0003",
+    type: "donut3",
+    name: "Old Fashioned",
+    ppu: 0.55,
+    batters: {
+      batter: [
+        { id: "1001", type: "Regular" },
+        { id: "1002", type: "Chocolate" },
+      ],
+    },
+    topping: [
+      { id: "5001", type: "None" },
+      { id: "5002", type: "Glazed" },
+      { id: "5003", type: "Chocolate" },
+      { id: "5004", type: "Maple" },
+    ],
+  },
+  {
+    id: "0004",
+    type: "donut1",
+    name: "Old Fashioned",
+    ppu: 0.55,
+    batters: {
+      batter: [{ id: "1001", type: "Regular" }],
+    },
+    topping: [
+      { id: "5001", type: "None" },
+      { id: "5002", type: "Glazed" },
+      { id: "5003", type: "Chocolate" },
+      { id: "5004", type: "Maple" },
+    ],
+  },
+];
+
+// filter donuts based on which have topping chocolate
+// function getChoco(arr) {
+//   return arr.filter((item) =>
+//     item.topping.find((topping) => topping.type === "Chocolate")
+//   );
+// }
+// console.log(getChoco(mainDonut));
+
+// filter donuts based which have batter type is regular and topping have Chocolate
+// function filterbatter(arr) {
+//   return arr.filter(
+//     (item) =>
+//       item.topping.find((topping) => topping.type === "Chocolate") &&
+//       item.batters.batter.find((batter) => batter.type === "Blueberry")
+//   );
+// }
+// console.log(filterbatter(mainDonut));
+
+// filter donuts based on which have topping chocolate and Sugar
+// function filterbatter(arr) {
+//   return arr.filter(
+//     (item) =>
+//       item.topping.find((topping) => topping.type === "Chocolate") &&
+//       item.topping.find((topping) => topping.type === "Sugar")
+//   );
+// }
+// console.log(filterbatter(mainDonut));
+
+// filter donuts based on ppu > 0.5
+// function filterppu(arr) {
+//   return arr.filter((item) => item.ppu > 0.5);
+// }
+// console.log(filterppu(mainDonut));
+
+// bring all batters for all donuts in single array
+// function filterBatters(arr) {
+//     return arr.map(item=>item.batters)
+// };
+// console.log(filterBatters(mainDonut));
+
+// filter donuts based on which have 2 and more than 2 batter in it
+// function moreThanTwoBatters(arr) {
+//   return arr.filter((item) => item.batters.batter.length >= 2);
+// }
+// console.log(moreThanTwoBatters(mainDonut));
+
+// 10
+// function getNameInitials(str) {
+//   return str
+//     .split(" ")
+//     .map((item) => item[0].toUpperCase())
+//     .join("");
+// }
+// console.log(getNameInitials("George Raymond Richard Martin"));
+
+// 11
+// function mergeStr(str) {
+//   let letter = str.split(" ");
+//   return letter
+//     .map((word) => {
+//       if (word.length > 3) {
+//         return word[0] + word.slice(1, -1).length + word.at(-1);
+//       }
+//       return word;
+//     })
+//     .join(" ");
+// }
+// console.log(mergeStr("Every developer likes to mix kubernetes and javascript"));
+
+
+// 12
