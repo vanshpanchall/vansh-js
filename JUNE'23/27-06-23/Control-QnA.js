@@ -214,7 +214,22 @@
 // console.log(getGrade(90));
 
 // 12
-// DOUBT
+// let convertToINR = function (code, amount) {
+//   let a = code.toUpperCase();
+//   switch (a) {
+//     case "USD":
+//       return amount * 82.08;
+//     case "EUR":
+//       return amount * 92.15;
+//       default:
+//           return "There is no such Currency";
+//     }
+// };
+
+// console.log(convertToINR("USD", 250) + " INR");
+// console.log(convertToINR("EUR", 250) + " INR");
+// console.log(convertToINR("eur", 250) + " INR");
+
 
 // 13
 // function reverseString(str) {
