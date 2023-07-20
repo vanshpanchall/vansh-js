@@ -39,14 +39,14 @@ var h = 0;
 click.addEventListener("click", () => {
   let msg = (document.querySelector("#click span").textContent = e += 1);
   // msg.textContent = alert('The Mouse CLicked');
-//   console.log("The Mouse CLicked");
+  //   console.log("The Mouse CLicked");
 });
 
 // MOUSE DOUBLE CLICK
 dblclick.addEventListener("dblclick", () => {
   let msg = (document.querySelector("#dblclick span").textContent = f += 1);
   // msg.textContent = alert('The Mouse CLicked');
-//   console.log("The Mouse Double CLicked");
+  //   console.log("The Mouse Double CLicked");
 });
 
 // MOUSE ENTER
@@ -74,7 +74,67 @@ leave.addEventListener("mouseleave", (e) => {
 });
 
 // MOUSE OUT
-    out.addEventListener("mouseout", (e) => {
+out.addEventListener("mouseout", (e) => {
   let msg = (document.querySelector("#out span").textContent = h += 1);
   // msg.textContent = alert("The Mouse Out");
+});
+
+// CREATING AN ELEMENT AND APPENDING IT
+
+const body = document.body;
+const div = document.createElement("div");
+// div.innerText='This div is created using JS!'
+// div.textContent = "This div is created again using JS!";
+div.innerHTML = "<h1>This div is created again using JS!</h1>";
+body.append(div);
+
+// ADDING NEW CLASS
+div.classList.add("font");
+
+// DIFFERENCE BETN textContent & innerText
+const span = document.querySelector(".sample");
+// console.log(span.textContent); // it displays the whole content including the white spaces even if it is has display none
+// console.log(span.innerText); // it will display only the visible text
+// console.log(span.innerHTML);
+
+const divSample = document.querySelector(".sample");
+const spanRemove = document.querySelector("#remove");
+
+// REMOVING AND APPENDING AN ELEMENT
+spanRemove.remove();
+divSample.append(spanRemove);
+
+// CHANGING THE TITLE OF HTML
+
+// let title = document.title;
+// // alert(`Title of this page: ` + title);
+// title.textContent='This is new Title'
+// title.innerHTML='new'
+
+// let changeTitle = document.querySelector("title");
+// changeTitle.textContent = "JS Events";
+
+// GETTING DATASET
+
+// console.log(spanRemove.dataset);
+
+// spanRemove.dataset.newName = "Bhaumik";
+
+// CHECKING WHETHER THE CLICKED TARGET IS DIV OR NOT
+// const divs = document.querySelectorAll("div");
+// document.addEventListener("click", (e) => {
+//   if (e.target.matches("div")) {
+//     console.log("Yes");
+//   } else {
+//     console.log("No");
+//   }
+// });
+
+let bodyXY = document.querySelector("#position");
+document.addEventListener("mousemove", (e) => {
+    let a = e.screenX;
+    let b = e.screenY;
+    let c = e.clientX;
+    let d = e.clientY;
+    bodyXY.innerText = a + b + c + d;
 });
