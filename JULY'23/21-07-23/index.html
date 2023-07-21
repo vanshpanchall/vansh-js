@@ -18,7 +18,8 @@
         }
 
         .one,
-        .two {
+        .two,
+        #form-submit {
             padding: 10px;
         }
 
@@ -109,17 +110,34 @@
 
     <form action="" id="form-submit">
 
+        <span id="required"></span>
+
+        <br>
+        <br>
+
         <label for="name">Enter Full Name:</label>
         <input type="text" name="" id="name">
+        <span id="req-name"></span>
 
-        <label for="age">Enter Age</label>
+        <br>
+        <br>
+
+        <label for="age">Enter Age:</label>
         <input type="number" name="" id="age">
+        <span id="req-age"></span>
+
+        <br>
+        <br>
 
         <button type="submit">Submit</button>
-        <!-- <input type="submit" id="form-submit" value="Submit"> -->
+
+        <br>
+        <br>
+
+        <span id="txt"></span>
+
     </form>
 
-    <span id="txt"></span>
 
     <script src="script.js"></script>
 </body>

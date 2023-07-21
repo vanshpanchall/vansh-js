@@ -82,10 +82,68 @@ childDiv.addEventListener("click", (e) => {
 //   }
 // });
 
-let submitted = document.querySelector("#form-submit");
+// FORM SUBMIT EVENT AND VALIDATION
 
+let submitted = document.querySelector("#form-submit");
+let getName = document.querySelector("#name");
+let getAge = document.querySelector("#age");
+
+let date = new Date().toLocaleString();
 submitted.addEventListener("submit", (e) => {
-  document.querySelector("#txt").textContent =
-        "The Form Submitted Successfully";
+  if (getName.value == "" && getAge.value == "") {
+    document.querySelector("#required").textContent =
+      "Name and Age is Required!";
+    document.querySelector("#required").style.color = "red";
+    // alert("Name and Age is Required");
+  } else if (getName.value == "") {
+    document.querySelector("#req-name").textContent = " Name is Required!";
+    document.querySelector("#req-name").style.color = "red";
+    // alert("Name is Required!");
+  } else if (getAge.value == "") {
+    document.querySelector("#req-age").textContent = " Age is Required!";
+    document.querySelector("#req-age").style.color = "red";
+    // alert("Age is required");
+  } else {
+    document.querySelector("#txt").textContent =
+      "The Form Submitted Successfully on: " + date;
     // alert("The Form Submitted Successfully");
+    confirm("Name: " + getName.value + " " + "Age: " + getAge.value);
+  }
+  e.preventDefault();
+});
+
+// FORM FOCUS EVENT
+
+getName.addEventListener("focus", (e) => {
+  e.target.style.backgroundColor = "lightblue";
+  console.log("Focused");
+});
+
+getAge.addEventListener("focus", (e) => {
+  e.target.style.backgroundColor = "lightgreen";
+  console.log("Focused");
+});
+
+// FORM BLUR EVENT
+
+getName.addEventListener("blur", (e) => {
+  e.target.style.backgroundColor = "beige";
+  console.log("Blurred");
+});
+
+getAge.addEventListener("blur", (e) => {
+  e.target.style.backgroundColor = "gainsboro";
+  console.log("Blurred");
+});
+
+// FORM INPUT EVENT
+
+getName.addEventListener("input", (e) => {
+  e.target.style.backgroundColor = "khaki";
+  console.log("Input added");
+});
+
+getAge.addEventListener("input", (e) => {
+  e.target.style.backgroundColor = "thistle";
+  console.log("Input added");
 });
