@@ -30,9 +30,24 @@
             border-radius: 5px;
             cursor: pointer;
             box-shadow: 1px 1px 10px 0px gainsboro;
+            transition: all 0.3s;
         }
 
+        .msg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 1rem;
+        }
 
+        .msg span {
+            padding: 10px 20px;
+            background-color: aliceblue;
+            box-shadow: 1px 1px 10px 0px gainsboro;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: none;
+        }
     </style>
 </head>
 
@@ -41,10 +56,10 @@
     <button class="show">Show Notifications</button>
 
     <div class="msg">
-        <!-- <span>Hii There</span>
-        <span>Have a nice day</span>
-        <span>Thanks!</span>
-        <span>Follow Me!</span> -->
+        <span class="random-msg">Hii There</span>
+        <span class="random-msg">Have a nice day</span>
+        <span class="random-msg">Thanks!</span>
+        <span class="random-msg">Follow Me!</span>
     </div>
 
     <script src="script.js"></script>

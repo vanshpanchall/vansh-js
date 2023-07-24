@@ -10,5 +10,7 @@ btn.addEventListener("click", (e) => {
 
   newSpan.style.left = x;
   newSpan.style.top = y;
-  
+
+  // newSpan.style.left = `${x}px`;
+  // newSpan.style.top = `${y}px`;
 });
