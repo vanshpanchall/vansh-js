@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            transition: all 0.3s;
+        }
+
+        .main {
+            box-shadow: -5px -5px 15px 0px gainsboro;
+            border-radius: 25px;
+        }
+
+        .btn {
+            padding: 4rem 7rem;
+            font-family: 'Courier New', Courier, monospace;
+            border: 5px solid black;
+            border-radius: 25px;
+            font-size: 3rem;
+            font-weight: 700;
+            color: indigo;
+            background-color: black;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: inset -5px -5px 15px 0px gainsboro;
+        }
+
+        .btn span {
+            position: absolute;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            top: 0%;
+            left: 0%;
+            background-color: gainsboro;
+            animation: ripple 0.5s;
+            /* opacity: 0; */
+        }
+
+        @keyframes ripple {
+            to {
+                transform: scale(10);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <button class="btn">CLICK HERE</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

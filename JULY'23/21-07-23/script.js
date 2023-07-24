@@ -35,10 +35,10 @@ getPass.addEventListener("click", (e) => {
 
   let result = "";
 
-  if (!document.querySelector("#upper").unchecked && 
-    !document.querySelector("#lower").unchecked &&
-    !document.querySelector("#num").unchecked &&
-    !document.querySelector("#special").unchecked) {
+  if (!document.querySelector("#upper").checked && 
+    !document.querySelector("#lower").checked &&
+    !document.querySelector("#num").checked &&
+    !document.querySelector("#special").checked) {
     result += allChars;
     
     }
