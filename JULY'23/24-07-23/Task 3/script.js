@@ -41,6 +41,7 @@ function createTable(value) {
     <th>Email</th>
     <th>Phone Number</th>
      `;
+  tableHead.style.color = "yellow";
   table.appendChild(tableHead);
 
   for (let i = 0; i < value.length; i++) {
