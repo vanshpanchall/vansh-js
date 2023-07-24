@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-07-23</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+        }
+
+        .toggle {
+            width: 100px;
+            height: 50px;
+            background-color: yellow;
+            border: 4px solid black;
+            border-radius: 100px;
+            position: relative;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .toggle::before {
+            content: "";
+            position: absolute;
+            width: 33px;
+            height: 33px;
+            border-radius: 50%;
+            background-color: black;
+            top: 10%;
+            left: 5%;
+            transition: all 0.3s;
+        }
+
+        .toggle.on {
+            background-color: white;
+        }
+
+        .toggle.on::before {
+            transform: translateX(50px);
+        }
+
+        .bg {
+            background-color: indigo;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="toggle"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

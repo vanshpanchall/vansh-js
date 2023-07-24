@@ -30,9 +30,18 @@ getPass.addEventListener("click", (e) => {
   let lowerCase = "abcdefghijklmnopqrstuvwxyz";
   let numbers = "0123456789";
   let specialChars = "@#$%&*";
+  let allChars =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*";
 
   let result = "";
 
+  if (!document.querySelector("#upper").unchecked && 
+    !document.querySelector("#lower").unchecked &&
+    !document.querySelector("#num").unchecked &&
+    !document.querySelector("#special").unchecked) {
+    result += allChars;
+    
+    }
   if (document.querySelector("#upper").checked) {
     result += upperCase;
   }
