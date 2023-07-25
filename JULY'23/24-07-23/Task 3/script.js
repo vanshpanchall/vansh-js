@@ -34,13 +34,18 @@ function createTable(value) {
   const table = document.createElement("table");
 
   const tableHead = document.createElement("tr");
-  tableHead.innerHTML = `
-    <th>Serial Number</th>
-    <th>First Name</th>
-    <th>Last Name</th>
-    <th>Email</th>
-    <th>Phone Number</th>
-     `;
+  for (let key in value[0]) {
+    let addHead = document.createElement("th");
+    addHead.innerHTML = key;
+    tableHead.appendChild(addHead);
+  }
+  // tableHead.innerHTML = `
+  //   <th>Serial Number</th>
+  //   <th>First Name</th>
+  //   <th>Last Name</th>
+  //   <th>Email</th>
+  //   <th>Phone Number</th>
+  //    `;
   tableHead.style.color = "yellow";
   table.appendChild(tableHead);
 

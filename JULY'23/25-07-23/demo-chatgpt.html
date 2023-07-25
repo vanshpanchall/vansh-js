@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .drag-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .drag-list li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .drag-list li.drag-over {
+            border: 2px dashed #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Drag and Drop List</h2>
+    <ul id="list" class="drag-list">
+        <li draggable="true">Item 1</li>
+        <li draggable="true">Item 2</li>
+        <li draggable="true">Item 3</li>
+        <li draggable="true">Item 4</li>
+        <li draggable="true">Item 5</li>
+    </ul>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const list = document.getElementById("list");
+
+            let draggedItem = null;
+
+            list.addEventListener("dragstart", (e) => {
+                draggedItem = e.target;
+                e.dataTransfer.effectAllowed = "move";
+                e.dataTransfer.setData("text/plain", "");
+            });
+
+            list.addEventListener("dragover", (e) => {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = "move";
+                const targetItem = e.target.closest("li");
+                if (targetItem && targetItem !== draggedItem) {
+                    targetItem.classList.add("drag-over");
+                }
+            });
+
+            list.addEventListener("dragleave", (e) => {
+                const targetItem = e.target.closest("li");
+                if (targetItem && targetItem !== draggedItem) {
+                    targetItem.classList.remove("drag-over");
+                }
+            });
+
+            list.addEventListener("drop", (e) => {
+                e.preventDefault();
+                const targetItem = e.target.closest("li");
+                if (targetItem && targetItem !== draggedItem) {
+                    list.insertBefore(draggedItem, targetItem);
+                    targetItem.classList.remove("drag-over");
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

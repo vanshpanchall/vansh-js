@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table class="getTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+
+    </table>
+
+    <script>
+        // let a = { ab: 15 };
+        // let b = [{ ab: 15 }];
+        // console.log(b.includes(a)); // false because reference is differet
+
+        // let arr = [];
+        // console.log(arr.push(15));
+        // console.log(arr.pop());
+
+        // let a = ['126', '166'];
+        // let b = [
+        //     { id: 126, value: 'hii' },
+        //     { id: 166, value: 'hello' }
+        // ];
+        // console.log(b.filter(e => a.includes(b.id)));
+
+        let data = [
+            { name: 'vansh', age: 18 },
+            { name: 'bhaumik', age: 17 },
+            { name: 'jeel', age: 19 },
+        ]
+        let getTable = document.querySelector(".getTable")
+
+        function createTable(value) {
+            value.forEach(e => {
+                let getData = document.createElement("tr");
+                getData.innerHTML = `
+                <td>${e.name}</td>
+                <td>${e.age}</td>
+                `;
+                getTable.appendChild(getData)
+            });
+        }
+        createTable(data);
+    </script>
+</body>
+
+</html>
