@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25-07-23</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            padding: 1rem;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            color: white;
+            background-color: black;
+        }
+
+        input {
+            margin-block: 10px;
+        }
+
+        .btn {
+            display: block;
+            padding: 10px 8px;
+            border: none;
+            border-radius: 8px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        .drag-n-drop {
+            padding: 1rem;
+        }
+
+        h2,
+        ul>li {
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 1rem;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="copy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tempora suscipit. Beatae cumque
+        delectus molestiae.</h1>
+
+    <input type="text" name="" id="">
+
+    <button class="btn">Button</button>
+
+    <div class="drag-n-drop">
+
+        <h2 style="color: yellow;">Today's Tasks :</h2>
+
+        <ul>
+            <li draggable="true">Learn Drag and Drop Event</li>
+            <li draggable="true">Learn How to Make Image Slider</li>
+            <li draggable="true">Learn Difference Betweeen Pointer Enter & Mouse Enter</li>
+            <li draggable="true">Learn Toggle Event</li>
+        </ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
