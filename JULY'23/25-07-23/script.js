@@ -27,3 +27,8 @@ btn.addEventListener("mouseenter", e => {
 
 // ------ DRAG AND DROP EVENTS ------
 
+const item = document.querySelector(".item");
+item.addEventListener("dragstart", e => {
+    e.dataTansfer.setData("text", e.target.id);
+    
+})

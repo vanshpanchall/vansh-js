@@ -13,4 +13,5 @@ const showNotification = () => {
 show.addEventListener("click", showNotification);
 setInterval(() => {
   getMain.children[0].remove();
+  console.log(getMain);
 }, 1000);
