@@ -13,13 +13,26 @@
         }
 
         body {
-            height: 100%;
+            height: 100vh;
             padding: 1rem;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
             color: white;
             background-color: black;
+        }
+
+        .card {
+            width: 50%;
+            height: 100%;
+            margin: auto;
+            /* text-align: center; */
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+            align-items: center;
+        }
+
+        .main {
+            position: relative;
+            transition: all 0.5s;
         }
 
         img {
@@ -28,29 +41,85 @@
         }
 
         .img {
-            display: flex;
+            /* display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            width: 400px;
-            /* width: 100%; */
-            height: 200px;
-            margin-bottom: 1rem;
+            gap: 15px; */
+            /* width: 800px; */
+            /* height: 200px; */
+            width: 100%;
+            margin-block: 1rem;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+            font-size: 20px;
+            background-color: yellow;
+        }
+
+        .pop-up {
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            /* display: flex; */
+            display: none;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .pop {
+            height: 60%;
+            width: 50%;
+            margin: auto;
+            color: black;
+            padding: 30px;
+            font-size: 30px;
+            border-radius: 5px;
+            background-color: white;
+            transition: all 0.5s;
+        }
+
+        .pop>p {
+            margin-block: 1.5rem;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- LARGER FORMAT IMAGE  -->
+    <!-- POPUP  -->
 
-    <div class="img">
-        <img src="https://images.unsplash.com/photo-1593975441316-c74548bef389?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80"
-            alt="demo">
-        <img src="https://plus.unsplash.com/premium_photo-1676139292859-26b94000daf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    <div class="main">
+        <div class="card">
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, doloremque nobis quos magni dignissimos
+                fugit.
+            </h1>
+            <div class="img">
+                <img src="https://images.unsplash.com/photo-1593975441316-c74548bef389?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1175&q=80"
+                    alt="demo">
+                <!-- <img src="https://plus.unsplash.com/premium_photo-1676139292859-26b94000daf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
             alt="demo">
         <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-            alt="demo">
+            alt="demo"> -->
+            </div>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+
+    <div class="pop-up">
+        <div class="pop">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, mollitia!</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odit cumque nemo illum soluta deleniti
+                fugiat
+                distinctio in labore, unde, accusamus doloremque id quidem aperiam dignissimos culpa accusantium
+                recusandae!
+                Tenetur, quidem! Pariatur sint dicta eius!</p>
+            <button class="close">Close</button>
+        </div>
     </div>
 
     <script src="script.js"></script>

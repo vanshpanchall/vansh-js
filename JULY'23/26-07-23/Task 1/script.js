@@ -4,11 +4,11 @@ btn.addEventListener("click", (e) => {
   const task = document.querySelector(".task");
   const addTask = document.querySelector(".add-task");
 
-  //   task.value.trim();
+  let input = task.value.trim();
 
   let a = document.createElement("li");
-  if (task.value.length > 3 && task.value.trim()) {
-    a.innerHTML = task.value;
+  if (input.length >= 3) {
+    a.innerHTML = input;
     let b = confirm("Are You Sure?");
 
     if (b) {
@@ -16,4 +16,13 @@ btn.addEventListener("click", (e) => {
     }
   }
   task.value = "";
+
+  let span = document.createElement("span");
+  span.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+  span.style.cursor = "pointer";
+  a.appendChild(span);
+
+  span.addEventListener("click", (e) => {
+    a.remove();
+  });
 });

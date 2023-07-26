@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
     <title>Task 1</title>
     <style>
         * {
@@ -18,17 +19,38 @@
             color: yellow;
             background-color: black;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 50%;
+            margin: auto;
         }
 
         input,
         ul,
         li {
+            width: 100%;
             padding: 8px;
             font-size: 20px;
-            margin-block: 10px;
+            margin-block: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             border-radius: 8px;
             border: none;
+            outline-color: yellow;
+        }
+
+        li {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            color: yellow;
+            background-color: rgb(6, 6, 46);
+            
         }
 
         button {
@@ -48,15 +70,14 @@
     <h1>To-Do List</h1>
 
     <div class="main">
+
         <input type="text" name="" class="task" placeholder="Add Your Task">
         <!-- <textarea name="" class="task" cols="30" rows="2"></textarea> -->
         <!-- <br> -->
         <button type="submit" class="btn">Submit</button>
+
+        <ul class="add-task"></ul>
     </div>
-
-    <ul class="add-task">
-
-    </ul>
 
     <script src="script.js"></script>
 </body>
