@@ -30,9 +30,16 @@
             margin: 0;
         }
 
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
         input {
+            margin: 10px;
+            width: 25%;
             padding: 8px;
-            margin: 8px;
             border: none;
             outline-width: 2px;
             outline-color: yellow;
@@ -50,28 +57,44 @@
 
         th,
         td {
+            width: 25%;
             border: 1px solid white;
             padding: 8px;
             text-align: center;
+            margin: 10px;
+            color: yellow;
+        }
+
+        button {
+            margin: 0px 0px 10px 10px;
+            padding: 5px 8px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            background-color: yellow;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
+    <form action="" class="main">
+        <input type="number" name="" id="num" placeholder="Sr. No.">
+        <input type="text" name="" id="name" placeholder="Enter Name">
+        <input type="number" name="" id="roll" placeholder="Enter Roll No.">
+        <input type="text" name="" id="branch" placeholder="Enter Branch">
+    </form>
 
-    <input type="number" name="" id="num" placeholder="Sr. No.">
-    <input type="text" name="" id="name" placeholder="Enter Name">
-    <input type="number" name="" id="roll" placeholder="Enter Roll No.">
-    <input type="text" name="" id="branch" placeholder="Enter Branch">
+    <button type="submit" class="add">Submit</button>
 
-<table>
-    <tr>
-        <th>Sr. No.</th>
-        <th>Student Name</th>
-        <th>Roll No.</th>
-        <th>Branch</th>
-    </tr>
-</table>
+    <table class="new-tr">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Student Name</th>
+            <th>Roll No.</th>
+            <th>Branch</th>
+        </tr>
+    </table>
 
     <script src="script.js"></script>
 </body>

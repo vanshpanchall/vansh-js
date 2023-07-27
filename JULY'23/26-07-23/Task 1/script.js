@@ -7,8 +7,14 @@ btn.addEventListener("click", (e) => {
   let input = task.value.trim();
 
   let a = document.createElement("li");
+
+  // ADDING AN ELEMENT INSIDE <li></li>
+
+  let textSpan = document.createElement("span");
+  a.appendChild(textSpan);
+
   if (input.length >= 3) {
-    a.textContent = input;
+    textSpan.textContent = input;
     let b = confirm("Are You Sure?");
 
     if (b) {
@@ -17,17 +23,14 @@ btn.addEventListener("click", (e) => {
   }
   task.value = "";
 
-  let newDiv = document.createElement("div");
+  // let newDiv = document.createElement("div");
 
   // ADDING DONE BUTTON
 
   let check = document.createElement("span");
   check.innerHTML = `<i class="fa-solid fa-check"></i>`;
-  check.style.marginRight = "25px";
-  check.style.cursor = "pointer";
-  check.style.color = "lightgreen";
-
-  newDiv.appendChild(check);
+  check.classList.add("check");
+  a.appendChild(check);
 
   // ADDING DELETE BUTTON
 
@@ -37,8 +40,8 @@ btn.addEventListener("click", (e) => {
   //   span.style.fontSize = "15px";
   span.style.cursor = "pointer";
   span.style.color = "tomato";
-  newDiv.appendChild(span);
-  a.appendChild(newDiv);
+  a.appendChild(span);
+  // a.appendChild(newDiv);
 
   // DONE FUNCTIONALITY
 
@@ -81,9 +84,15 @@ btn.addEventListener("click", (e) => {
   // edit.innerHTML = `<i class="fa-solid fa-pen"></i>`;
   edit.innerHTML = `<i class="fa-regular fa-pen-to-square"></i>`;
   edit.classList.add("edit");
+
+  edit.addEventListener("click", (e) => {
+    let updated = prompt("Enter New Task:").trim();
+    console.log(`Updated text: ${updated}`);
+    if (updated.length >= 3) {
+      textSpan.textContent = updated;
+    }
+  });
   a.appendChild(edit);
-
-
 
   // DELETING FUNCTIONALITY
 
