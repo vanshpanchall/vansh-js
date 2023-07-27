@@ -45,8 +45,8 @@ btn.addEventListener("click", (e) => {
     let undo = document.createElement("span");
     undo.innerHTML = `<i class="fa-solid fa-rotate-left"></i>`;
     undo.style.position = "absolute";
-    undo.style.top = "29%";
-    undo.style.right = "-4%";
+    undo.style.top = "16px";
+    undo.style.right = "-35px";
     undo.style.color = "yellow";
     undo.style.cursor = "pointer";
     a.appendChild(undo);
