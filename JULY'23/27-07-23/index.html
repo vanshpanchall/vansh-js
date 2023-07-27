@@ -36,7 +36,7 @@
             align-items: center;
         }
 
-        input {
+        .data {
             margin: 10px;
             width: 25%;
             padding: 8px;
@@ -44,7 +44,7 @@
             outline-width: 2px;
             outline-color: yellow;
             border-radius: 6px;
-            background-color: white;
+            background-color: yellow;
             font-size: 20px;
         }
 
@@ -65,7 +65,7 @@
             color: yellow;
         }
 
-        button {
+        .add {
             margin: 0px 0px 10px 10px;
             padding: 5px 8px;
             border: none;
@@ -74,18 +74,32 @@
             background-color: yellow;
             cursor: pointer;
         }
+
+        #del-num,
+        .delete {
+            padding: 8px;
+            font-size: 17px;
+            margin: 10px;
+            border: none;
+            outline-width: 2px;
+            outline-color: yellow;
+            border-radius: 6px;
+            background-color: yellow;
+        }
     </style>
 </head>
 
 <body>
     <form action="" class="main">
-        <input type="number" name="" id="num" placeholder="Sr. No.">
-        <input type="text" name="" id="name" placeholder="Enter Name">
-        <input type="number" name="" id="roll" placeholder="Enter Roll No.">
-        <input type="text" name="" id="branch" placeholder="Enter Branch">
+        <input type="number" name="" class="data" id="num" placeholder="Sr. No.">
+        <input type="text" name="" class="data" id="name" placeholder="Enter Name">
+        <input type="number" name="" class="data" id="roll" placeholder="Enter Roll No.">
+        <input type="text" name="" class="data" id="branch" placeholder="Enter Branch">
     </form>
 
     <button type="submit" class="add">Submit</button>
+
+
 
     <table class="new-tr">
         <tr>
@@ -95,6 +109,9 @@
             <th>Branch</th>
         </tr>
     </table>
+
+    <!-- <input type="number" name="" id="del-num">
+    <button class="delete" style="cursor: pointer;">Delete</button> -->
 
     <script src="script.js"></script>
 </body>

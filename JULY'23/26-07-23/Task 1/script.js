@@ -46,18 +46,28 @@ btn.addEventListener("click", (e) => {
   // DONE FUNCTIONALITY
 
   check.addEventListener("click", () => {
-    a.classList.toggle("text");
+    // textSpan.classList.toggle("text");
 
     // ON CLICK REMOVE AND ADD
 
-    // if ((a.style.textDecoration = "line-through")) {
-    //   a.style.color = "yellow";
-    //   a.style.textDecoration = "none";
+    // it will run
+
+    if (textSpan.classList.contains("text")) {
+      textSpan.classList.remove("text");
+    } else {
+      textSpan.classList.add("text");
+    }
+
+    // the code is not running
+
+    // if ((textSpan.style.textDecoration = "line-through")) {
+    //   textSpan.style.color = "yellow";
+    //   textSpan.style.textDecoration = "none";
     // } else {
-    //   a.style.textDecoration = "line-through";
-    //   a.style.textDecorationColor = "grey";
-    //   a.style.textDecorationThickness = "2px";
-    //   a.style.color = "grey";
+    //   textSpan.style.textDecoration = "line-through";
+    //   textSpan.style.textDecorationColor = "grey";
+    //   textSpan.style.textDecorationThickness = "2px";
+    //   textSpan.style.color = "grey";
     // }
 
     // FOR UNDO BUTTON
