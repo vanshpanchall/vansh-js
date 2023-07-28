@@ -3,9 +3,9 @@ let input = document.querySelector("#userInput");
 let buttons = document.querySelectorAll("button");
 
 let str = "";
-let arr = Array.from(buttons);
+// let arr = Array.from(buttons);
 
-arr.forEach((btn) => {
+buttons.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     if (e.target.innerHTML == "=") {
       str = eval(str);

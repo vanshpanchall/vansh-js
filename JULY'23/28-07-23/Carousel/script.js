@@ -60,3 +60,9 @@ const slideImg = () => {
 // });
 //   indicator.appendChild(span);
 // });
+
+// removing the extra space
+
+// console.log(
+//   "       dsds              sdsdsd       ".split(" ").filter(Boolean).join(" ")
+// );
