@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>30-07-23</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            padding: 1rem;
+            color: white;
+            background-color: black;
+        }
+
+        .create {
+            margin-block: 10px;
+        }
+
+        #addTask,
+        .add-btn {
+            padding: 8px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+
+        th {
+            color: yellow;
+            font-size: 20px;
+        }
+
+        td {
+            padding: 4px;
+            font-size: 18px;
+            border-radius: 5px;
+            color: black;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CRUD in JS (Create, Read, Update, Delete)</h1>
+
+    <form action="" class="create">
+        <input type="text" name="" id="addTask" placeholder="Add Task">
+        <input type="submit" value="Submit" class="add-btn">
+    </form>
+
+    <table>
+        <tr>
+            <th>My Tasks :-</th>
+        </tr>
+        <tbody class="todo-tasks"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
