@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+button {
+  cursor: pointer;
+  padding: 5px 10px;
+  background-color: white;
+  font-size: 14px;
+  border: 2px solid saddlebrown;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+h1 {
+  text-align: center;
+  color: saddlebrown;
+  padding: 2rem 0rem;
+}
+
+main {
+  padding-top: 10px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.m-x {
+  margin-right: 2rem;
+}
+.items {
+  margin-bottom: 2rem;
+  padding: 1.7rem;
+  width: 48%;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px gainsboro;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.test-type,
+.package-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-y {
+  margin: 15px 0px;
+  font-size: 18px;
+}
+
+.brown {
+  color: saddlebrown;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.grey {
+  color: darkgray;
+}
+
+.linethru {
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.book span {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 890px) {
+  .items {
+    width: 100%;
+  }
+  .m-x {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .test-type,
+  .package-details {
+    /* display: block; */
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
