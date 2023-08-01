@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
+    <title>CRUD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            width: 80%;
+            margin: auto;
+            padding: 1.5rem;
+            color: yellow;
+            background-color: black;
+            /*font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .data {
+            width: 25%;
+            padding: 8px;
+            border: none;
+            outline-width: 2px;
+            outline-color: yellow;
+            border-radius: 6px;
+            background-color: yellow;
+            font-size: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        th,
+        td {
+            width: 25%;
+            border: 1px solid white;
+            padding: 8px;
+            text-align: center;
+            margin: 10px;
+            color: yellow;
+        }
+
+        .add {
+            margin: 0px 0px 15px 0px;
+            padding: 5px 8px;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            background-color: yellow;
+            cursor: pointer;
+        }
+
+        .taskTr {
+            position: relative;
+        }
+
+        .editBtn {
+            position: absolute;
+            top: 9px;
+            right: -30px;
+            color: yellow;
+            cursor: pointer;
+        }
+        .delBtn {
+            position: absolute;
+            top: 9px;
+            right: -54px;
+            font-size: 20px;
+            color: red;
+            cursor: pointer;
+        }
+
+        /* #del-num,
+        .delete {
+            padding: 8px;
+            font-size: 17px;
+            margin: 10px;
+            border: none;
+            outline-width: 2px;
+            outline-color: yellow;
+            border-radius: 6px;
+            background-color: yellow;
+        } */
+    </style>
+</head>
+
+<body>
+    <form action="" class="main">
+        <input type="number" name="" class="data" id="num" placeholder="Sr. No.">
+        <input type="text" name="" class="data" id="name" placeholder="Enter Name">
+        <input type="number" name="" class="data" id="roll" placeholder="Enter Roll No.">
+        <input type="text" name="" class="data" id="branch" placeholder="Enter Branch">
+    </form>
+
+    <button type="submit" class="add" onclick="addTask()">Submit</button>
+
+    <table class="new-tr">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Student Name</th>
+            <th>Roll No.</th>
+            <th>Branch</th>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
