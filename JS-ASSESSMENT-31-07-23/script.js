@@ -11,17 +11,21 @@ const discount = document.querySelector("#discount");
 check.disabled = true;
 
 code.addEventListener("input", (e) => {
-  if (e.target.value.length == 0) {
-    console.log(e.target.value.length);
-    check.disabled = true;
-    // check.classList.add("check");
-    check.style.backgroundColor = "rgba(250, 128, 114, 0.382)";
-    check.style.cursor = "no-drop";
-    newAmt.textContent = Number(getAMt.value) + (getAMt.value * 18) / 100;
-    finalAmount.textContent = newAmt.textContent;
-    error.textContent = "";
+  if (getAMt.value.length == 0) {
+    error.textContent = "Please Enter Amount!";
     error.style.color = "red";
-    discount.textContent = "- 0%";
+    if (e.target.value.length == 0) {
+      console.log(e.target.value.length);
+      check.disabled = true;
+      // check.classList.add("check");
+      check.style.backgroundColor = "rgba(250, 128, 114, 0.382)";
+      check.style.cursor = "no-drop";
+      newAmt.textContent = Number(getAMt.value) + (getAMt.value * 18) / 100;
+      finalAmount.textContent = newAmt.textContent;
+      error.textContent = "";
+      error.style.color = "red";
+      discount.textContent = "- 0%";
+    }
   } else {
     check.disabled = false;
     check.style.backgroundColor = "salmon";

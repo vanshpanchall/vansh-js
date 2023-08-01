@@ -12,16 +12,16 @@ function addTask(e) {
   if (srNum.value.trim() != "") {
     if (store) {
       update(store);
-      //   store = null;
+        store = null;
       //   alert("Enter below Fields");
     } else {
       const newTr = document.createElement("tr");
       newTr.classList.add("taskTr");
       newTr.innerHTML = `
-    <td>${srNum.value}</td>
-    <td>${studName.value}</td>
-    <td>${rollNo.value}</td>
-    <td>${branch.value}</td>
+      <td>${srNum.value}</td>
+      <td>${studName.value}</td>
+      <td>${rollNo.value}</td>
+      <td>${branch.value}</td>
     `;
 
       const edit = document.createElement("span");
@@ -53,19 +53,19 @@ function editTask(e) {
   branch.value = a.children[3].innerText;
 }
 
+function deleteTask(e) {
+  let confirmDel = confirm("Are You Sure?");
+  if (confirmDel) {
+    let targetRow = e.parentElement.parentElement;
+    targetRow.remove();
+  }
+}
+
 function update(e) {
   e.children[0].textContent = srNum.value;
   e.children[1].textContent = studName.value;
   e.children[2].textContent = rollNo.value;
   e.children[3].textContent = branch.value;
-}
-
-function deleteTask(e) {
-  let confirm = confirm("Are You Sure?");
-  if (confirm) {
-    let targetRow = e.parentElement.parentElement;
-    targetRow.remove();
-  }
 }
 
 function reset() {
