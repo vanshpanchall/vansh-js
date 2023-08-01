@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
+    <title>CRUD </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100%;
+            padding: 1rem;
+            color: yellow;
+            background-color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 50%;
+            margin: auto;
+        }
+
+        .task,
+        ul,
+        li {
+            width: 100%;
+            padding: 8px;
+            font-size: 20px;
+            margin-block: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 8px;
+            border: none;
+            outline-color: yellow;
+        }
+
+        li {
+            position: relative;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: yellow;
+            background-color: rgb(6, 6, 46);
+        }
+
+        button {
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            padding: 8px;
+            cursor: pointer;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: yellow;
+        }
+
+        .text {
+            text-decoration: line-through;
+            color: grey;
+            text-decoration-color: grey;
+            text-decoration-thickness: 2px;
+        }
+
+        .edit {
+            position: absolute;
+            top: 17px;
+            right: -32px;
+            color: grey;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .check {
+            position: absolute;
+            top: 17px;
+            left: -32px;
+            color: lightgreen;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>To-Do List</h1>
+
+    <div class="main">
+
+        <input type="text" name="Task" class="task" placeholder="Create Task">
+        <button type="submit" class="btn" onclick="addTask()">ADD</button>
+
+        <ul class="addTask"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
