@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Gene va, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: #253469;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .clock {
+            width: 43%;
+            height: 80%;
+            position: relative;
+            border-radius: 50%;
+            background-color: yellow;
+        }
+
+        .hour{
+            width: 2%;
+            height: 30%;
+            background-color: black;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            bottom: 50%px;
+            left: 50%;
+            transform-origin: bottom;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+    </div>
+
+</body>
+
+</html>
