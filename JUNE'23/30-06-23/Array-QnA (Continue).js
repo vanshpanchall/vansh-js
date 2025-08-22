@@ -74,7 +74,7 @@
 //   },
 // ];
 
-// 1
+// // 1
 // function toppingChocolate(array) {
 //   let filteredChoco = mainDonut.filter((value, index, arr) => {
 //     let topping = value.topping;
@@ -504,12 +504,12 @@ console.log(groupAlphabetically(input));
 // console.log(nerArr);
 
 // 24
-const students = [
-  { name: "Alice", age: 20, grade: "A" },
-  { name: "Bob", age: 18, grade: "B" },
-  { name: "Charlie", age: 19, grade: "A" },
-  { name: "David", age: 20, grade: "C" },
-];
+// const students = [
+//   { name: "Alice", age: 20, grade: "A" },
+//   { name: "Bob", age: 18, grade: "B" },
+//   { name: "Charlie", age: 19, grade: "A" },
+//   { name: "David", age: 20, grade: "C" },
+// ];
 // let sortAge = students.sort((a, c) => a.age - c.age);
 // console.log(sortAge);
 
